@@ -1,37 +1,26 @@
 body {
-margin: 0 10%;
+margin: 0% auto;
 box-sizing: border-box;
 background-color: corl;
+max-width: 375px;
 }
 
-
-
-.bestsellers {
-    background-color: ble;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-
-}
-
-article{
-    background-color: alieblue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
 }
 
 h3 {
-    background-color: chatreuse;
-    font-size: 4.5rem;
+    background-color: charteuse;
+    font-size: 1.5rem;
+    margin-bottom: 0%;
 }
 
 p {
-   font-size: 1.5rem;
+   font-size: 0.5rem;
    width: 100%;
    background-color: blueiolet;
+   margin-top:2%;
 }
 
 #image-div {
@@ -39,20 +28,21 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    background-color: rgba(247, 243, 243, 0.764);
+    gap: 1rem;
+    background-color: rgba(247, 246, 246, 0.764);
+    border-radius: 10%;
 }
 
 #cover-image {
-width: 20rem;
-height: 36rem;
+width: 13rem;
+height: 22rem;
 text-align: center;
 }
 
 .articles {
     display: flex;
     flex-direction: column;
-    gap:5rem;
+     gap:4rem;
     background-color: dargreen;
     
 }
