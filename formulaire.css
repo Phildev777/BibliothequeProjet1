@@ -1,0 +1,11 @@
+.formulaire {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 60px;
+    gap: 30px;
+
+    width: 335px;
+    height: 537px;
+}
