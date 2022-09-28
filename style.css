@@ -1,0 +1,58 @@
+body {
+margin: 0 10%;
+box-sizing: border-box;
+background-color: corl;
+}
+
+
+
+.bestsellers {
+    background-color: ble;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+}
+
+article{
+    background-color: alieblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h3 {
+    background-color: chatreuse;
+    font-size: 4.5rem;
+}
+
+p {
+   font-size: 1.5rem;
+   width: 100%;
+   background-color: blueiolet;
+}
+
+#image-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(247, 243, 243, 0.764);
+}
+
+#cover-image {
+width: 20rem;
+height: 36rem;
+text-align: center;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap:5rem;
+    background-color: dargreen;
+    
+}
