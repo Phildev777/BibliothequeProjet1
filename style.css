@@ -34,12 +34,6 @@ h2 {
     font-weight: var(--font-weight-bold);
 }
 
-h2,
-h3 {
-    color: var(--titles-color);
-}
-
-
 h3 {
     font-size: 1.5rem;
     line-height: 2.125;
@@ -91,6 +85,30 @@ p>span>.locationName {
     font-weight: var(--font-weight-bold);
 }
 
-.identity-text, .description {
+/*css de guillaume*/
+
+.identity-text,
+.description {
     color: var(--text-color);
+}
+
+h2,
+h3 {
+    color: var(--titles-color);
+}
+
+.more {
+    display: none;
+}
+
+.myBtn {
+    background: none;
+    color: var(--secondary-color);
+    border-style: none;
+    text-decoration: none;
+}
+
+img {
+    width: 75%;
+    height: auto;
 }
