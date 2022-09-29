@@ -3,10 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="formulaire.css">
     <script src="https://kit.fontawesome.com/dc1be99236.js" crossorigin="anonymous"></script>
+    <title>Le nez dans les lettres</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 </head>
 
 
@@ -24,11 +28,24 @@
 
                 <div class="infoForm">
 
-                    <label id="labelForm" for="nom">Nom</label> <input type="text" name="nom" placeholder="John Doe"
-                        size="30" maxlength="30" required>
+                    <div class="labelNameMail">
 
-                    <label id="labelForm" for="email">Email</label> <input type="text" name="email"
-                        placeholder="john.doe@mail.com" size="30" maxlength="30" required>
+                        <p>
+
+                            <label id="labelForm" for="nom">Nom</label> <br> <input id="userName" type="text" name="nom"
+                                placeholder="John Doe" size="30" maxlength="30" required>
+
+                        </p>
+
+                        <p>
+
+
+                            <label id="labelForm" for="email">Email</label> <br> <input type="text" name="email"
+                                placeholder="john.doe@mail.com" size="30" maxlength="30" required>
+
+                        </p>
+
+                    </div>
 
                     <label id="labelForm" for="textearea">Message</label>
 
@@ -39,9 +56,8 @@
                         librairie "Le nez dans les lettres". Pour en savoir plus sur l'utilisation de vos données
                         personnelles, merci de consulter la page concernant notre politique de confidentialité.</p>
 
-
-
                 </div>
+
                 <input id="sendButton" type="submit" value="Envoyer">
 
             </fieldset>
@@ -64,15 +80,15 @@
 
             <p> <strong> Le nez dans les lettres</strong> <br> 4 rue Baron, 44000 NANTES </p>
 
-
         </div>
-    </section>
 
+    </section>
 
     <footer>
 
-        <p id="footerText">© Le nez dans les lettres 2022 </br> <a id="footerUrl" href=" url">Politique de
-                confidentialité</a> - <a id="footerUrl" href="url">Mentions légales</a>
+        <p id="footerText">© Le nez dans les lettres 2022 </br> <a id="footerUrl" target="_blank"
+                href="/policy.html">Politique de
+                confidentialité</a> - <a id="footerUrl" target="_blank" href="/legal.html">Mentions légales</a>
         </p>
 
     </footer>
