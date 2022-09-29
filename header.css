@@ -18,7 +18,7 @@ body {
 }
 
 nav>a {
-    font-size: 1rem;
+    font-size: 20px;
     line-height: 1.625;
     color: var(--titles-color);
 }
@@ -52,13 +52,14 @@ p {
 
 /* Sidenav menu */
 .sidenav {
-    height: 60%;
-    width: 250px;
+    height: 55%;
+    width: 360px;
     position: fixed;
-    right: -250px;
-    background-color: #e8e8e8;
+    right: -360px;
+    background-color: white;
     padding-top: 60px;
     transition: right 0.5s ease;
+    border-radius: 18px;
 
 }
 
@@ -66,10 +67,11 @@ p {
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 16px;
     color: #818181;
     display: block;
     transition: 0.3s;
+
 }
 
 .sidenav a:hover {
@@ -80,6 +82,8 @@ p {
     list-style-type: none;
     padding: 0;
     margin: 0;
+
+
 }
 
 /* Active class */
@@ -123,7 +127,8 @@ header {
 .logo {
     flex: 5;
     margin: 15px;
-
+    max-width: 144px;
+    max-height: 56px;
 
 
 }
@@ -132,11 +137,17 @@ i {
     margin: 20px;
 }
 
-ul {
+.lili {
     display: flex;
     flex-direction: column;
     gap: 30px;
+
+
+
+
 }
+
+
 
 .btnContact {
     margin-left: 35px;
@@ -147,4 +158,10 @@ ul {
     border-radius: 18px;
     border-color: var(--primary-color);
     border-style: solid;
+}
+
+.phototitre {
+    width: 375px;
+    height: 658px;
+    margin: 0px;
 }
