@@ -34,6 +34,12 @@ h2 {
     font-weight: var(--font-weight-bold);
 }
 
+h2,
+h3 {
+    color: var(--titles-color);
+}
+
+
 h3 {
     font-size: 1.5rem;
     line-height: 2.125;
@@ -83,4 +89,8 @@ p.gdpr {
 p>span>.locationName {
     color: var(--titles-color);
     font-weight: var(--font-weight-bold);
+}
+
+.identity-text, .description {
+    color: var(--text-color);
 }
