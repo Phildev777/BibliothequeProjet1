@@ -1,0 +1,150 @@
+:root {
+    --primary-color: #384E77;
+    --secondary-color: #8BBEB2;
+    --font-family: 'Noto Sans', sans-serif;
+    --titles-color: #0D0630;
+    --text-color: #18314F;
+    --background-color: var(--secondary-color), 0.1;
+    --shadow-color: 0.25rem 0.25rem 1.25rem var(--primary-color), 0.2;
+    --font-weight-bold: 800;
+    --font-weight-regular: 400;
+}
+
+body {
+
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-regular);
+
+}
+
+nav>a {
+    font-size: 1rem;
+    line-height: 1.625;
+    color: var(--titles-color);
+}
+
+nav>a:hover {
+    color: var(--primary-color);
+}
+
+h2 {
+
+    font-size: 2.5rem;
+    line-height: 3.125;
+    font-weight: var(--font-weight-bold);
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 2.125;
+    font-weight: var(--font-weight-bold);
+}
+
+h3>span {
+    font-weight: var(--font-weight-regular);
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.625;
+    color: var(--text-color);
+}
+
+/* Sidenav menu */
+.sidenav {
+    height: 60%;
+    width: 250px;
+    position: fixed;
+    right: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: right 0.5s ease;
+
+}
+
+/* Sidenav menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #111;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Active class */
+.sidenav.active {
+    right: 0;
+    padding-top: 0px;
+}
+
+/* Close btn */
+.sidenav .close {
+    position: relative;
+
+    text-align: right;
+    padding-left: 0px;
+
+
+}
+
+/* Icône burger */
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+}
+
+.glass {
+    flex: 5;
+    display: flex;
+    color: var(--secondary-color);
+    flex-direction: row-reverse;
+}
+
+.logo {
+    flex: 5;
+    margin: 15px;
+
+
+
+}
+
+i {
+    margin: 20px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.btnContact {
+    margin-left: 35px;
+    padding: 10px;
+    border-width: 6px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 18px;
+    border-color: var(--primary-color);
+    border-style: solid;
+}
