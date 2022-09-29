@@ -1,7 +1,79 @@
+:root {
+    --primary-color: #384E77;
+    --secondary-color: #8BBEB2;
+    --font-family: 'Noto Sans', sans-serif;
+    --titles-color: #0D0630;
+    --text-color: #18314F;
+    --background-color: rgba(139, 190, 178, 0.1);
+    --shadow-color: 4px 4px 20px rgba(56, 78, 119, 0.2);
+    --font-weight-bold: 800;
+    --font-weight-regular: 400;
+}
+
+body {
+
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-regular);
+
+}
+
+nav>a {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: var(--titles-color);
+}
+
+nav>a:hover {
+    color: var(--primary-color);
+}
+
+h2 {
+
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+    font-weight: var(--font-weight-bold);
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 2.125rem;
+    font-weight: var(--font-weight-bold);
+}
+
+h3>span {
+    font-weight: var(--font-weight-regular);
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: var(--text-color);
+}
+
+a>p {
+    color: var(--secondary-color);
+}
+
+
+p.gdpr {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    color: var(--text-color);
+}
+
+p>span>.locationName {
+    color: var(--titles-color);
+    font-weight: var(--font-weight-bold);
+}
+
+
 /* Formulaire */
 
 .formulaire {
-    background-color: #8BBEB21A;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -11,8 +83,14 @@
     margin: auto;
     height: 537px;
     background: #FFFFFF;
-    box-shadow: 4px 4px 20px rgba(56, 78, 119, 0.2);
+    box-shadow: var(--shadow-color);
     border-radius: 14px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: hidden;
+
 }
 
 .infoForm {
@@ -22,18 +100,25 @@
     margin-top: 25px;
 }
 
-#formulaireName,
-#formulaireMail {
-    border: 1px solid #8BBEB2;
+input {
+
+    border: 1px solid var(--secondary-color);
     border-radius: 5px;
-    width: 295px;
     height: 46px;
+    width: 100%;
+}
+
+::placeholder {
+    color: rgba(139, 190, 178, 0.5);
+    font-size: 1rem;
+    line-height: 1.625rem;
 }
 
 #formulaireMessage {
-    border: 1px solid #8BBEB2;
-    border-radius: 5px;
-    width: 295px;
+    color: var(--secondary-color), 0.5;
+    border: 0.0625rem solid var(--secondary-color);
+    border-radius: 0.3125rem;
+    width: 100%;
     height: 92px;
 }
 
@@ -45,12 +130,16 @@
     width: 99px;
     height: 46px;
     color: #FFFFFF;
-    background-color: #384E77;
+    background-color: var(--primary-color);
+    border: 0.0625rem solid var(--secondary-color);
+    border-radius: 0.3125rem;
+    text-align: center;
 }
 
 #labelForm {
-    display: flex;
-    align-items: flex-start;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: var(--font-weight-bold);
 }
 
 /* Google map */
@@ -74,16 +163,18 @@
     display: flex;
     flex-direction: row;
     margin-top: 20px;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
 
 }
 
-#pointPosition {
-    width: 15px;
-    height: 22px;
+#mapMarker {
+    color: var(--secondary-color);
 }
 
+#adressName {
+    font-style: var(--font-weight-bold);
+}
 
 /*Footer*/
 
