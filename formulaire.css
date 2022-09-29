@@ -74,6 +74,7 @@ p>span>.locationName {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 40px 20px 40px 20px;
 }
 
 
@@ -97,7 +98,7 @@ p>span>.locationName {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    margin-top: 25px;
+    margin-top: 5px;
 }
 
 input {
@@ -112,6 +113,7 @@ input {
     color: rgba(139, 190, 178, 0.5);
     font-size: 1rem;
     line-height: 1.625rem;
+    text-indent: 10px;
 }
 
 #formulaireMessage {
@@ -124,6 +126,8 @@ input {
 
 #policyText {
     width: 295px;
+    font-size: 0.8rem;
+    line-height: 1.5;
 }
 
 #sendButton {
@@ -133,12 +137,20 @@ input {
     background-color: var(--primary-color);
     border-radius: 5px;
     text-align: center;
+    margin-top: 10px;
+}
+
+#sendButton:hover {
+    background-color: var(--secondary-color);
+    color: #0D0630;
 }
 
 #labelForm {
     font-size: 0.875rem;
     line-height: 1.375rem;
     font-weight: var(--font-weight-bold);
+    margin-top: 15px;
+
 }
 
 /* Google map */
@@ -148,15 +160,16 @@ input {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    padding: 30px 20px;
 }
 
 #activMap {
-    width: 322px;
-    height: 366px;
-    border-radius: 10px;
+    width: 375px;
+    height: 375px;
+    border-radius: 14px;
 }
 
-/* Adresse */
+/* Adress */
 
 #positionAdress {
     display: flex;
@@ -164,6 +177,7 @@ input {
     margin-top: 20px;
     gap: 15px;
     align-items: center;
+    margin-bottom: 20px;
 
 }
 
