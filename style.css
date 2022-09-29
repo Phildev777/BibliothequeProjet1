@@ -50,6 +50,10 @@ p {
     color: var(--text-color);
 }
 
+a>p {
+    color: var(--secondary-color);
+}
+
 .formLabel {
     font-size: 0.875;
     line-height: 1.375;
