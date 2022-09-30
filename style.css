@@ -10,18 +10,16 @@
     --font-weight-regular: 400;
 }
 
+* {
+    margin: 0% auto;
+    box-sizing: border-box;
+}
+
 body {
 
     font-family: var(--font-family);
     font-weight: var(--font-weight-regular);
 }
-
-#main2 {
-    margin: 0% auto;
-    box-sizing: border-box;
-    background-color: corl;
-    }
-
 
 
 nav>a {
@@ -82,17 +80,16 @@ p>span>.locationName {
 }
 
 
-CSS DANI
+/*CSS-DANI*/
 
-#main2 {
-    margin: 0% auto;
-    box-sizing: border-box;
-}
-  
-.book-article{
+.book-article {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
+}
+
+#article-title {
+   width: 100%;   
 }
 
 .article-title-text {
@@ -101,11 +98,10 @@ CSS DANI
     text-align: left;
     }
 
-
-       
+      
 .article-main2-text {
     background-color: bluevioet;
-    margin:2% 4%;
+    margin: 2% 4% 0
 }
     
 #image-div {
@@ -114,14 +110,16 @@ CSS DANI
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    background-color: red;
-    border-radius: 10%;
+    background-color: var(--background-color);
+    border-radius: 0.62rem;
+    margin: 2rem;
+    
     
 }
     
     #cover-image {
-    width: 10rem;
-    height: 16rem;
+    width: 8rem;
+    height: 13rem;
     text-align: center;
     margin: 2rem;
     }
@@ -129,7 +127,8 @@ CSS DANI
     .articles {
         display: flex;
         flex-direction: column;
-         gap:4rem;
+        gap: 2rem;
         background-color: dargreen;
+        
         
     }
