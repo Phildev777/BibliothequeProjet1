@@ -67,7 +67,8 @@ p>span>.locationName {
 }
 
 
-/* Formulaire */
+/* --------------Formulaire------------- */
+
 
 .formulaire {
     background-color: var(--background-color);
@@ -76,8 +77,6 @@ p>span>.locationName {
     align-items: center;
     padding: 40px 20px 40px 20px;
 }
-
-
 
 .windowForm {
     width: 335px;
@@ -91,7 +90,6 @@ p>span>.locationName {
     flex-direction: column;
     align-items: center;
     border-style: hidden;
-
 }
 
 .infoForm {
@@ -106,6 +104,7 @@ input {
     border-radius: 5px;
     height: 46px;
     width: 100%;
+    text-indent: 15px;
 }
 
 ::placeholder {
@@ -122,6 +121,8 @@ input {
     border-radius: 5px;
     width: 100%;
     height: 92px;
+    text-indent: 15px;
+    padding-top: 10px;
 }
 
 #policyText {
@@ -130,19 +131,21 @@ input {
     line-height: 1.5;
 }
 
-#sendButton {
+button {
     width: 99px;
     height: 46px;
     color: #FFFFFF;
     background-color: var(--primary-color);
     border-radius: 5px;
     text-align: center;
-    margin-top: 10px;
 }
 
-#sendButton:hover {
-    background-color: var(--secondary-color);
-    color: #0D0630;
+button:hover {
+    background-color: var(--text-color);
+}
+
+button:active {
+    background-color: var(--text-color);
 }
 
 #labelForm {
@@ -150,10 +153,9 @@ input {
     line-height: 1.375rem;
     font-weight: var(--font-weight-bold);
     margin-top: 17px;
-
 }
 
-/* Google map */
+/* --------------Google map-------------- */
 
 .googleMap {
     display: flex;
@@ -190,7 +192,7 @@ input {
 
 
 
-/*Footer*/
+/* --------------Footer-------------- */
 
 footer {
     width: 100%;
@@ -211,9 +213,9 @@ footer {
 
 
 
-/* Responsive */
+/* --------------Responsive-------------- */
 
-/* Formulaire - GoogleMap responsive */
+/* --------------Formulaire - GoogleMap responsive-------------- */
 
 
 @media screen and (min-width: 600px) {
