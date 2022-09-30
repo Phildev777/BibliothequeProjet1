@@ -34,6 +34,12 @@ h2 {
     font-weight: var(--font-weight-bold);
 }
 
+h2,
+h3 {
+    color: var(--titles-color);
+}
+
+
 h3 {
     font-size: 1.5rem;
     line-height: 2.125rem;
@@ -106,6 +112,7 @@ input {
     border-radius: 5px;
     height: 46px;
     width: 100%;
+
 }
 
 ::placeholder {
@@ -115,9 +122,9 @@ input {
 }
 
 #formulaireMessage {
-    color: var(--secondary-color), 0.5;
-    border: 0.0625rem solid var(--secondary-color);
-    border-radius: 0.3125rem;
+    color: var(--text-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
     width: 100%;
     height: 92px;
 }
@@ -126,13 +133,15 @@ input {
     width: 295px;
 }
 
+
 #sendButton {
     width: 99px;
     height: 46px;
     color: #FFFFFF;
     background-color: var(--primary-color);
-    border: 0.0625rem solid var(--secondary-color);
-    border-radius: 0.3125rem;
+
+    border-radius: 5px;
+
     text-align: center;
 }
 
