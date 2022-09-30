@@ -1,0 +1,523 @@
+:root {
+    --primary-color: #384E77;
+    --secondary-color: #8BBEB2;
+    --font-family: 'Noto Sans', sans-serif;
+    --titles-color: #0D0630;
+    --text-color: #18314F;
+    --background-color: var(--secondary-color), 0.1;
+    --shadow-color: 0.25rem 0.25rem 1.25rem var(--primary-color), 0.2;
+    --font-weight-bold: 800;
+    --font-weight-regular: 400;
+}
+
+* {
+    margin: 0% auto;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-regular);
+
+}
+
+nav>a {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: var(--titles-color);
+}
+
+
+nav>a:hover {
+    color: var(--primary-color);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+    font-weight: var(--font-weight-bold);
+}
+
+h2,
+h3 {
+    color: var(--titles-color);
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 2.125rem;
+    font-weight: var(--font-weight-bold);
+}
+
+h3>span {
+    display: block;
+    font-weight: var(--font-weight-regular);
+    font-size: 1.25rem;
+
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: var(--text-color);
+}
+
+a>p {
+    color: var(--secondary-color);
+}
+
+/* header part */
+
+/* Sidenav menu */
+.sidenav {
+    height: 55%;
+    width: 360px;
+    position: fixed;
+    right: -360px;
+    background-color: white;
+    padding-top: 60px;
+    transition: right 0.5s ease;
+    border-radius: 18px;
+
+
+}
+
+/* Sidenav menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+
+}
+
+.sidenav a:hover {
+    color: #111;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+/* Active class */
+.sidenav.active {
+    right: 0;
+    padding-top: 0px;
+}
+
+/* Close btn */
+.sidenav .close {
+    position: relative;
+
+    text-align: right;
+    padding-left: 0px;
+
+
+}
+
+/* Icône burger */
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+}
+
+.glass {
+    flex: 5;
+    display: flex;
+    color: var(--secondary-color);
+    flex-direction: row-reverse;
+}
+
+.logo {
+    flex: 5;
+    margin: 15px;
+
+    max-width: 144px;
+    max-height: 56px;
+
+
+}
+
+i {
+    margin: 20px;
+}
+
+.lili {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+
+
+
+}
+
+
+
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.btnContact {
+    margin-left: 35px;
+    padding: 10px;
+    border-width: 6px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 18px;
+    border-color: var(--primary-color);
+    border-style: solid;
+
+}
+
+.phototitre {
+    width: 375px;
+    height: 658px;
+    margin: 0px;
+
+}
+
+.formLabel {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: var(--font-weight-bold);
+}
+
+*/ input {
+    color: var(--secondary-color), 0.5;
+    border: 0.0625 solid var(--secondary-color);
+    border-radius: 0.3125;
+    font-size: 1rem;
+    line-height: 1.625rem;
+}
+
+textarea {
+    color: var(--secondary-color), 0.5;
+    border: 0.0625 solid var(--secondary-color);
+    border-radius: 0.3125;
+}
+
+p.gdpr {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    color: var(--text-color);
+}
+
+p>span>.locationName {
+    color: var(--titles-color);
+    font-weight: var(--font-weight-bold);
+}
+
+/*css de guillaume*/
+
+#more2,
+#more3,
+#more1 {
+    display: none;
+}
+
+.identity {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.my-selection {
+    background: rgba(139, 190, 178, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.my-selection-card-book {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 21.5px;
+}
+
+.my-selection-card-book>div>img {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px 70px;
+}
+
+#identity-img {
+    border-radius: 10px;
+    width: 100%;
+    color: rgba(139, 190, 178, 0.1);
+    margin: 30px 0px;
+}
+
+.lirePlus {
+    color: var(--secondary-color);
+    margin-top: 20px;
+}
+
+
+/*CSS-DANI*/
+
+.book-article {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#article-title {
+    width: 100%;
+}
+
+.article-title-text {
+    background-color: chartrese;
+    margin: 0 4%;
+    text-align: left;
+}
+
+
+.article-main2-text {
+    background-color: bluevioet;
+    margin: 2% 4% 0
+}
+
+#image-div {
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--background-color);
+    border-radius: 0.62rem;
+    margin: 2rem;
+
+
+}
+
+#cover-image {
+    width: 8rem;
+    height: 13rem;
+    text-align: center;
+    margin: 2rem;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: dargreen;
+
+
+}
+
+
+/* --------------Formulaire------------- */
+
+
+.formulaire {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px 40px 20px;
+}
+
+.windowForm {
+    width: 335px;
+    margin: auto;
+    height: 537px;
+    background: #FFFFFF;
+    box-shadow: var(--shadow-color);
+    border-radius: 14px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: hidden;
+}
+
+.infoForm {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+input {
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    height: 46px;
+    width: 100%;
+    text-indent: 15px;
+}
+
+::placeholder {
+    color: rgba(139, 190, 178, 0.5);
+    font-size: 1rem;
+    line-height: 1.625rem;
+    text-indent: 15px;
+    font-family: var(--font-family);
+}
+
+#formulaireMessage {
+    color: var(--text-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    width: 100%;
+    height: 92px;
+    text-indent: 15px;
+    padding-top: 10px;
+}
+
+#policyText {
+    width: 295px;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+button {
+    width: 99px;
+    height: 46px;
+    color: #FFFFFF;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: var(--text-color);
+}
+
+button:active {
+    background-color: var(--text-color);
+}
+
+#labelForm {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: var(--font-weight-bold);
+    margin-top: 17px;
+}
+
+/* --------------Google map-------------- */
+
+.googleMap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7px;
+    padding: 30px 20px;
+}
+
+#activMap {
+    width: 335px;
+    height: 375px;
+    border-radius: 14px;
+}
+
+/* Adress */
+
+#positionAdress {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    padding: auto;
+    margin-top: 10px;
+}
+
+#mapMarker {
+    color: var(--secondary-color);
+}
+
+#adressName {
+    font-style: var(--font-weight-bold);
+}
+
+
+
+/* --------------Footer-------------- */
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #384E77;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#footerUrl,
+#footerText {
+    color: #FFFFFF;
+
+}
+
+
+
+/* --------------Responsive-------------- */
+
+/* --------------Formulaire - GoogleMap responsive-------------- */
+
+
+@media screen and (min-width: 600px) {
+
+    .formulaire {
+        padding-bottom: 80px;
+        padding-top: 10px;
+    }
+
+    .windowForm {
+        width: 700px;
+        height: 438px;
+    }
+
+    .labelNameMail {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    input {
+        width: 270px;
+    }
+
+    #formulaireMessage,
+    #policyText {
+        width: 590px;
+    }
+
+    .googleMap {
+        margin-top: 50px;
+    }
+
+    #activMap {
+        width: 700px;
+    }
+}
