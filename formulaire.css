@@ -34,12 +34,6 @@ h2 {
     font-weight: var(--font-weight-bold);
 }
 
-h2,
-h3 {
-    color: var(--titles-color);
-}
-
-
 h3 {
     font-size: 1.5rem;
     line-height: 2.125rem;
@@ -73,16 +67,16 @@ p>span>.locationName {
 }
 
 
-/* Formulaire */
+/* --------------Formulaire------------- */
+
 
 .formulaire {
     background-color: var(--background-color);
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 40px 20px 40px 20px;
 }
-
-
 
 .windowForm {
     width: 335px;
@@ -96,29 +90,29 @@ p>span>.locationName {
     flex-direction: column;
     align-items: center;
     border-style: hidden;
-
 }
 
 .infoForm {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    margin-top: 25px;
+    margin-top: 5px;
 }
 
 input {
-
     border: 1px solid var(--secondary-color);
     border-radius: 5px;
     height: 46px;
     width: 100%;
-
+    text-indent: 15px;
 }
 
 ::placeholder {
     color: rgba(139, 190, 178, 0.5);
     font-size: 1rem;
     line-height: 1.625rem;
+    text-indent: 15px;
+    font-family: var(--font-family);
 }
 
 #formulaireMessage {
@@ -127,54 +121,65 @@ input {
     border-radius: 5px;
     width: 100%;
     height: 92px;
+    text-indent: 15px;
+    padding-top: 10px;
 }
 
 #policyText {
     width: 295px;
+    font-size: 0.8rem;
+    line-height: 1.5;
 }
 
-
-#sendButton {
+button {
     width: 99px;
     height: 46px;
     color: #FFFFFF;
     background-color: var(--primary-color);
-
     border-radius: 5px;
-
     text-align: center;
+}
+
+button:hover {
+    background-color: var(--text-color);
+}
+
+button:active {
+    background-color: var(--text-color);
 }
 
 #labelForm {
     font-size: 0.875rem;
     line-height: 1.375rem;
     font-weight: var(--font-weight-bold);
+    margin-top: 17px;
 }
 
-/* Google map */
+/* --------------Google map-------------- */
 
 .googleMap {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 7px;
+    padding: 30px 20px;
 }
 
 #activMap {
-    width: 322px;
-    height: 366px;
-    border-radius: 10px;
+    width: 335px;
+    height: 375px;
+    border-radius: 14px;
 }
 
-/* Adresse */
+/* Adress */
 
 #positionAdress {
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
     gap: 15px;
     align-items: center;
-
+    padding: auto;
+    margin-top: 10px;
 }
 
 #mapMarker {
@@ -185,7 +190,9 @@ input {
     font-style: var(--font-weight-bold);
 }
 
-/*Footer*/
+
+
+/* --------------Footer-------------- */
 
 footer {
     width: 100%;
@@ -202,4 +209,47 @@ footer {
 #footerText {
     color: #FFFFFF;
 
+}
+
+
+
+/* --------------Responsive-------------- */
+
+/* --------------Formulaire - GoogleMap responsive-------------- */
+
+
+@media screen and (min-width: 600px) {
+
+    .formulaire {
+        padding-bottom: 80px;
+        padding-top: 10px;
+    }
+
+    .windowForm {
+        width: 700px;
+        height: 438px;
+    }
+
+    .labelNameMail {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    input {
+        width: 270px;
+    }
+
+    #formulaireMessage,
+    #policyText {
+        width: 590px;
+    }
+
+    .googleMap {
+        margin-top: 50px;
+    }
+
+    #activMap {
+        width: 700px;
+    }
 }
