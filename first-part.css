@@ -25,7 +25,7 @@ body {
 
 nav>a {
     font-size: 1rem;
-    line-height: 1.625;
+    line-height: 1.625rem;
     color: var(--titles-color);
 }
 
@@ -36,14 +36,14 @@ nav>a:hover {
 h2 {
     text-align: center;
     font-size: 2.5rem;
-    line-height: 3.125;
+    line-height: 3.125rem;
     font-weight: var(--font-weight-bold);
 }
 
 
 h3 {
     font-size: 1.5rem;
-    line-height: 2.125;
+    line-height: 2.125rem;
     font-weight: var(--font-weight-bold);
 }
 
@@ -56,7 +56,7 @@ h3>span {
 
 p {
     font-size: 1rem;
-    line-height: 1.625;
+    line-height: 1.625rem;
     color: var(--text-color);
 }
 
@@ -65,8 +65,8 @@ a>p {
 }
 
 .formLabel {
-    font-size: 0.875;
-    line-height: 1.375;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
     font-weight: var(--font-weight-bold);
 }
 
@@ -75,7 +75,7 @@ input {
     border: 0.0625 solid var(--secondary-color);
     border-radius: 0.3125;
     font-size: 1rem;
-    line-height: 1.625;
+    line-height: 1.625rem;
 }
 
 textarea {
@@ -86,7 +86,7 @@ textarea {
 
 p.gdpr {
     font-size: 0.75rem;
-    line-height: 1.125;
+    line-height: 1.125rem;
     color: var(--text-color);
 }
 
