@@ -11,7 +11,8 @@
 }
 
 * {
-    margin: 0% auto;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -19,7 +20,6 @@ body {
 
     font-family: var(--font-family);
     font-weight: var(--font-weight-regular);
-
 }
 
 nav>a {
@@ -55,7 +55,6 @@ h3>span {
     display: block;
     font-weight: var(--font-weight-regular);
     font-size: 1.25rem;
-
 }
 
 p {
@@ -80,21 +79,16 @@ a>p {
     padding-top: 60px;
     transition: right 0.5s ease;
     border-radius: 18px;
-
-
 }
 
 /* Sidenav menu links */
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-
     font-size: 16px;
     color: #818181;
     display: block;
     transition: 0.3s;
-
-
 }
 
 .sidenav a:hover {
@@ -105,7 +99,6 @@ a>p {
     list-style-type: none;
     padding: 0;
     margin: 0;
-
 }
 
 /* Active class */
@@ -117,11 +110,8 @@ a>p {
 /* Close btn */
 .sidenav .close {
     position: relative;
-
     text-align: right;
     padding-left: 0px;
-
-
 }
 
 /* Icône burger */
@@ -149,11 +139,8 @@ header {
 .logo {
     flex: 5;
     margin: 15px;
-
     max-width: 144px;
     max-height: 56px;
-
-
 }
 
 i {
@@ -164,21 +151,13 @@ i {
     display: flex;
     flex-direction: column;
     gap: 30px;
-
-
-
-
 }
-
-
-
 
 ul {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-
 
 .btnContact {
     margin-left: 35px;
@@ -189,14 +168,12 @@ ul {
     border-radius: 18px;
     border-color: var(--primary-color);
     border-style: solid;
-
 }
 
 .phototitre {
     width: 375px;
     height: 658px;
     margin: 0px;
-
 }
 
 .formLabel {
@@ -275,19 +252,16 @@ p>span>.locationName {
 
 .lirePlus {
     color: var(--secondary-color);
-    margin-top: 20px;
+    margin-top: 10px;
 }
-
 
 /*CSS-DANI*/
 
 .book-article {
-
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 
 #article-title {
     width: 100%;
@@ -298,7 +272,6 @@ p>span>.locationName {
     margin: 0 4%;
     text-align: left;
 }
-
 
 .article-main2-text {
     background-color: bluevioet;
@@ -314,8 +287,6 @@ p>span>.locationName {
     background-color: var(--background-color);
     border-radius: 0.62rem;
     margin: 2rem;
-
-
 }
 
 #cover-image {
@@ -330,13 +301,9 @@ p>span>.locationName {
     flex-direction: column;
     gap: 2rem;
     background-color: dargreen;
-
-
 }
 
-
 /* --------------Formulaire------------- */
-
 
 .formulaire {
     background-color: var(--background-color);
@@ -458,8 +425,6 @@ button:active {
     font-style: var(--font-weight-bold);
 }
 
-
-
 /* --------------Footer-------------- */
 
 footer {
@@ -470,21 +435,16 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 #footerUrl,
 #footerText {
     color: #FFFFFF;
-
 }
-
-
 
 /* --------------Responsive-------------- */
 
 /* --------------Formulaire - GoogleMap responsive-------------- */
-
 
 @media screen and (min-width: 600px) {
 
