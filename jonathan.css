@@ -66,6 +66,7 @@ a>p {
 
 /* --------------Formulaire------------- */
 
+
 .formulaire {
     background-color: var(--background-color);
     display: flex;
@@ -86,11 +87,14 @@ a>p {
     flex-direction: column;
     align-items: center;
     border-style: hidden;
+    margin-top: 40px;
 }
 
 .infoForm {
     display: flex;
     flex-direction: column;
+    gap: 5px;
+    margin-top: 5px;
 }
 
 input {
@@ -99,6 +103,19 @@ input {
     height: 46px;
     width: 100%;
     text-indent: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    border: 1px solid var(--primary-color);
+    outline: none;
+}
+
+#labelForm {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: var(--font-weight-bold);
 }
 
 ::placeholder {
@@ -117,11 +134,17 @@ input {
     height: 92px;
     text-indent: 15px;
     padding-top: 10px;
+    margin-top: 5px;
+}
+
+#formulaireMessage:focus {
+    border: 1px solid #384E77;
+    outline: none;
 }
 
 #policyText {
     width: 295px;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     line-height: 1.5;
 }
 
@@ -132,6 +155,8 @@ button {
     background-color: var(--primary-color);
     border-radius: 5px;
     text-align: center;
+    margin: auto;
+    transition: 0.4s;
 }
 
 button:hover {
@@ -142,11 +167,44 @@ button:active {
     background-color: var(--text-color);
 }
 
-#labelForm {
-    font-size: 0.875rem;
-    line-height: 1.375rem;
-    font-weight: var(--font-weight-bold);
-    margin-top: 17px;
+/* --------------Popup-------------- */
+
+.form-popup {
+    display: none;
+    position: fixed;
+    width: 330px;
+    margin: auto;
+    height: 335px;
+    background: #FFFFFF;
+    box-shadow: var(--shadow-color);
+    border-radius: 14px;
+    padding: 30px 20px;
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.pop-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: white;
+}
+
+#closeButton {
+    margin: auto;
 }
 
 /* --------------Google map-------------- */
@@ -173,7 +231,7 @@ button:active {
     gap: 15px;
     align-items: center;
     padding: auto;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 #mapMarker {
@@ -184,7 +242,10 @@ button:active {
     font-style: var(--font-weight-bold);
 }
 
+
+
 /* --------------Footer-------------- */
+
 
 footer {
     width: 100%;
@@ -201,9 +262,11 @@ footer {
     color: #FFFFFF;
 }
 
+
 /* --------------Responsive-------------- */
 
-/* --------------Formulaire - GoogleMap responsive-------------- */
+/* --------------Formulaire - GoogleMap - Popup - responsive-------------- */
+
 
 @media screen and (min-width: 600px) {
 
@@ -237,6 +300,11 @@ footer {
     }
 
     #activMap {
+        width: 700px;
+    }
+
+    .form-popup {
+        height: 260px;
         width: 700px;
     }
 }

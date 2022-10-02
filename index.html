@@ -97,7 +97,7 @@
         <h2>Qui suis-je ?</h2>
 
         <p>
-            Je suis Paul Eugène Jonathan Scattolini, mais vous pouvez m’appeler tout simplement
+            Je suis Paul Eugène Jonathan Dani Guillaume Philippe, mais vous pouvez m’appeler tout simplement
             <strong>Paul</strong>.
             Baigné depuis mon
             plus jeune âge dans le monde des lettres, je réalise aujourd’hui mon rêve : transmettre mon amour de la
@@ -283,7 +283,7 @@
 
     <section class="formulaire">
 
-        <h2>Contactez-moi</h2>
+        <h2 id="contactMe">Contactez-moi</h2>
 
         <form class="form">
 
@@ -303,7 +303,7 @@
                         <p>
 
                             <label id="labelForm" for="email">Email</label> <br> <input type="text" name="email"
-                                placeholder="john.doe@mail.com" size="30" maxlength="30" required>
+                                id="userMail" placeholder="john.doe@mail.com" size="30" maxlength="30" required>
 
                         </p>
 
@@ -320,11 +320,33 @@
 
                 </div>
 
-                <button>Envoyer</button>
+                <button id="sendButton" type="submit" onclick="openForm()"><strong>Envoyez</strong></button>
 
             </fieldset>
 
         </form>
+
+        <div class="popup">
+
+            <div class="form-popup" id="popupForm">
+
+                <div action="/formulaire.js" class="pop-container">
+
+                    <div>
+
+                        <p>Merci pour votre message !</p>
+                        <p>Toute notre équipe se met au taquet pour répondre au plus vite à votre question.</p>
+
+                    </div>
+
+                    <button id="closeButton" type="button" onclick="closeForm()">Fermer</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
 
     </section>
 
