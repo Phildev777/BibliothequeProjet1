@@ -6,8 +6,8 @@
     --font-family: 'Noto Sans', sans-serif;
     --titles-color: #0D0630;
     --text-color: #18314F;
-    --background-color: var(--secondary-color), 0.2;
-    --shadow-color: 0.25rem 0.25rem 1.25rem var(--primary-color), 0.2;
+    --background-color: rgba(139, 190, 178, 0.2);
+    --shadow-color: 4px 4px 20px rgba(56, 78, 119, 0.2);
     --font-weight-bold: 800;
     --font-weight-regular: 400;
 }
@@ -184,17 +184,17 @@ ul {
 }
 
 */ input {
-    color: var(--secondary-color), 0.5;
-    border: 0.0625 solid var(--secondary-color);
-    border-radius: 0.3125;
+    color: rgba(139, 190, 178, 0.5);
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
     font-size: 1rem;
     line-height: 1.625rem;
 }
 
 textarea {
     color: var(--secondary-color), 0.5;
-    border: 0.0625 solid var(--secondary-color);
-    border-radius: 0.3125;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
 }
 
 p.gdpr {
