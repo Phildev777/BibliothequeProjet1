@@ -92,103 +92,114 @@
         </div> -->
 
     </section>
-    <section class="identity">
+    <section>
+        <div class="identity">
+            <div class="identity-title">
+                <h2>Qui suis-je ?</h2>
 
-        <h2>Qui suis-je ?</h2>
-
-        <p>
-            Je suis Paul Eugène Jonathan Scattolini, mais vous pouvez m’appeler tout simplement
-            <strong>Paul</strong>.
-            Baigné depuis mon
-            plus jeune âge dans le monde des lettres, je réalise aujourd’hui mon rêve : transmettre mon amour de la
-            littérature à tout ceux qui franchiront la porte de ma librairie. Un bon conseil pour un bon livre.
-        </p>
-
-        <img src="/assets/project-1-photo-paul.jpg" id="identity-img" alt="Paul's Picture">
-
-        <img src="assets/projet-1-icon-wave.svg" alt="wave icon" id="iconWave" />
-
+                <p>
+                    Je suis Paul Eugène Jonathan Scattolini, mais vous pouvez m’appeler tout simplement
+                    <strong>Paul</strong>.
+                    Baigné depuis mon
+                    plus jeune âge dans le monde des lettres, je réalise aujourd’hui mon rêve : transmettre mon amour de
+                    la
+                    littérature à tout ceux qui franchiront la porte de ma librairie. Un bon conseil pour un bon livre.
+                </p>
+            </div>
+            <div class="identity-image-div">
+                <img src="/assets/project-1-photo-paul.jpg" id="identity-img" alt="Paul's Picture">
+            </div>
+        </div>
     </section>
-    <section class="my-selection">
-        <div class="my-selection-title">
-            <h2>Ma sélection</h2>
-        </div>
-
-        <div class="my-selection-card-book">
-            <div>
-                <img src="/assets/projet-1-book-cover-des-fleurs-pour-algernon.jpg"
-                    alt="couverture du livre Des fleurs pour algenon">
+    <div class="iconWave">
+        <img src="assets/projet-1-icon-wave.svg" alt="wave icon" id="iconWave" />
+    </div>
+    <section>
+        <div class="my-selection">
+            <div class="my-selection-title">
+                <h2>Ma sélection</h2>
             </div>
-            <h3>Des fleurs pour algernon,
-                <span class="autor">Daniel Keyes</span>
-            </h3>
+            <div class="my-selection-div">
+                <article class="my-selection-card-book">
+                    <div>
+                        <div class="my-selection-image-div">
+                            <img src="/assets/projet-1-book-cover-des-fleurs-pour-algernon.jpg"
+                                alt="couverture du livre Des fleurs pour algenon">
+                        </div>
+                        <div>
+                            <h3>Des fleurs pour algernon,
+                                <span class="autor">Daniel Keyes</span>
+                            </h3>
+                        </div>
 
-            <div class="description">
-                <article>
-                    <p>
-                        Algernon est une souris dont le traitement du Pr Nemur et du Dr Strauss vient de
-                        décupler
-                        l'intelligence. Enhardis par cette<span id="dots1">...</span>
-                        <span id="more1"> réussite, les
-                            savants tentent,
-                            avec l'assistance de la
-                            psychologue Alice Kinnian, d'appliquer leur découverte à Charlie Gordon, un simple
-                            d'esprit.
-                            C'est
-                            bientôt l'extraordinaire éveil de l'intelligence pour le jeune homme. Il découvre un
-                            monde
-                            dont
-                            il
-                            avait toujours été exclu, et l'amour qui naît entre Alice et lui achève de le
-                            métamorphoser</span>
-                    </p>
-                    <div id="lirePlus1" onclick="textReveal1()" style="cursor: pointer;" class="lirePlus">Lire
-                        plus <i class="fa-solid fa-plus"></i>
-
+                        <div>
+                            <p class="content">
+                                Algernon est une souris dont le traitement du Pr Nemur et du Dr Strauss vient de
+                                décupler
+                                l'intelligence. Enhardis par cette
+                                réussite, les
+                                savants tentent,
+                                avec l'assistance de la
+                                psychologue Alice Kinnian, d'appliquer leur découverte à Charlie Gordon, un simple
+                                d'esprit.
+                                C'est
+                                bientôt l'extraordinaire éveil de l'intelligence pour le jeune homme. Il découvre un
+                                monde
+                                dont
+                                il
+                                avait toujours été exclu, et l'amour qui naît entre Alice et lui achève de le
+                                métamorphoser.
+                            </p>
+                        </div>
+                        <div onclick="readMore(this)" class="linkLirePlus">Lire plus +</div>
                     </div>
+                </article>
 
-                </article>
-            </div>
-        </div>
-        <div class="my-selection-card-book">
-            <div>
-                <img src="/assets/projet-1-book-cover-fahrenheit-451.jpeg" alt="couverture du livre Farhenheit 451"
-                    class="selection-img">
-            </div>
-            <h3>Farhenheit 451, <span class="autor">Ray Bradbury</span></h3>
-            <div class="description">
-                <article>
-                    <p>
-                        451 degrés Fahrenheit représentent la température à laquelle un livre s'enflamme et se consume.
-                        Dans
-                        cette société future <span id="dots2">...</span>
-                        <span id="more2">où la lecture, source de
+                <article class="my-selection-card-book">
+                    <div>
+                        <div class="my-selection-image-div">
+                            <img src="/assets/projet-1-book-cover-fahrenheit-451.jpeg"
+                                alt="couverture du livre Farhenheit 451">
+                        </div>
+                        <div>
+                            <h3>Farhenheit 451, <span class="autor">Ray Bradbury</span></h3>
+                        </div>
+                        <p class="content">
+                            451 degrés Fahrenheit représentent la température à laquelle un livre s'enflamme et se
+                            consume.
+                            Dans
+                            cette société future où la lecture, source de
                             questionnement et de réflexion, est considérée comme
-                            un acte antisocial, un corps spécial de pompiers est chargé de brûler tous les livres, dont
+                            un acte antisocial, un corps spécial de pompiers est chargé de brûler tous les livres,
+                            dont
                             la
-                            détention est interdite pour le bien collectif. Montag, le pompier pyromane, se met pourtant
+                            détention est interdite pour le bien collectif. Montag, le pompier pyromane, se met
+                            pourtant
                             à rêver
-                            d'un monde différent.</span>
-                    </p>
-                    <div id="lirePlus2" onclick="textReveal2()" style="cursor: pointer;" class="lirePlus">Lire plus <i
-                            class="fa-solid fa-plus"></i></div>
+                            d'un monde différent.
+                        </p>
+                        <div onclick="readMore(this)" class="linkLirePlus">Lire plus +</div>
+                    </div>
                 </article>
-            </div>
-        </div>
-        <div class="my-selection-card-book">
-            <div>
-                <img src="/assets/projet-1-book-cover-la-horde-du-contrevent.jpeg"
-                    alt="couverture du livre La horde du contrevent" class="selection-img">
-            </div>
-            <h3>La horde du contrevents, <span class="autor">Alain Damasio</span></h3>
-            <div class="description">
-                <article>
-                    <p>
-                        Un groupe d'élite, formé dès l'enfance à faire face, part des confins d'une terre féroce,
-                        saignée
-                        de
-                        rafales, pour aller <span id="dots3">...</span>
-                        <span id="more3">chercher l'origine du
+
+
+                <article class="my-selection-card-book">
+                    <div>
+                        <div class="my-selection-image-div">
+                            <img src="/assets/projet-1-book-cover-la-horde-du-contrevent.jpeg"
+                                alt="couverture du livre La horde du contrevent">
+                        </div>
+                        <div>
+                            <h3>La horde du contrevents, <span class="autor">Alain
+                                    Damasio</span></h3>
+                        </div>
+
+                        <p class="content">
+                            Un groupe d'élite, formé dès l'enfance à faire face, part des confins d'une terre
+                            féroce,
+                            saignée
+                            de
+                            rafales, pour aller chercher l'origine du
                             vent.
                             Ils sont vingt-trois, un
                             bloc, un noeud de courage :
@@ -198,13 +209,10 @@
                             Extrême-Amont
                             qui
                             fuit
-                            devant eux comme un horizon fou.</span>
-                    </p>
-                    <div id="lirePlus3" onclick="textReveal3()" style="cursor: pointer;" class="lirePlus">Lire plus <i
-                            class="fa-solid fa-plus"></i>
-
+                            devant eux comme un horizon fou.
+                        </p>
+                        <div onclick="readMore(this)" class="linkLirePlus">Lire plus +</div>
                     </div>
-
                 </article>
             </div>
         </div>
