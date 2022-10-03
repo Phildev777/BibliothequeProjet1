@@ -18,3 +18,10 @@
     margin: 1rem;    
 }
 
+.lireplus {
+    border: none;
+    background-color:white;
+    color: var(--secondary-color);
+}
+
+.mas {display: none;}
