@@ -179,31 +179,6 @@ ul {
     margin: 0px;
 }
 
-.formLabel {
-    font-size: 0.875rem;
-    line-height: 1.375rem;
-    font-weight: var(--font-weight-bold);
-}
-
-*/ input {
-    color: rgba(139, 190, 178, 0.5);
-    border: 1px solid var(--secondary-color);
-    border-radius: 5px;
-    font-size: 1rem;
-    line-height: 1.625rem;
-}
-
-textarea {
-    color: var(--secondary-color), 0.5;
-    border: 1px solid var(--secondary-color);
-    border-radius: 5px;
-}
-
-p.gdpr {
-    font-size: 0.75rem;
-    line-height: 1.125rem;
-    color: var(--text-color);
-}
 
 p>span>.locationName {
     color: var(--titles-color);

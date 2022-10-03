@@ -1,12 +1,4 @@
 
-
-/*
-    openForm.preventDefault();  
-*/
-
-/* Envoi le popup mais sans avoir à remplir le formulaire */
-
-
 function openForm(e) {
     e.preventDefault();
     document.getElementById("popupForm").style.display = "block";
