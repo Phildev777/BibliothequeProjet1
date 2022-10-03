@@ -7,8 +7,8 @@
 /* Envoi le popup mais sans avoir à remplir le formulaire */
 
 
-function openForm() {
-
+function openForm(e) {
+    e.preventDefault();
     document.getElementById("popupForm").style.display = "block";
     document.querySelector(".form").style.opacity = "20%";
     document.querySelector(".googleMap").style.display = "none";
