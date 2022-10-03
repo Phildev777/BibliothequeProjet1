@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #384E77;
+    --secondary-color: #8BBEB2;
+    --font-family: 'Noto Sans', sans-serif;
+    --titles-color: #0D0630;
+    --text-color: #18314F;
+    --background-color: rgba(139, 190, 178, 0.1);
+    --shadow-color: 4px 4px 20px rgba(56, 78, 119, 0.2);
+    --font-weight-bold: 800;
+    --font-weight-regular: 400;
+}
+
+.identity,
+.my-selection,
+.my-selection-card-book,
+.iconWave,
+.myselection-image-div,
+.book-article {
+    display: flex;
+    flex-direction: column;
+}
+
+.identity {
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+.identity h2 {
+    margin: 20px 0px 40px 0px;
+}
+
+#identity-img {
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.iconWave {
+    align-items: center;
+    margin: 40px;
+}
+
+.my-selection {
+    background: rgba(139, 190, 178, 0.1);
+    width: 100%;
+}
+
+.my-selection h2 {
+    margin: 40px 20px;
+}
+
+.my-selection-card-book {
+    width: 100%;
+    padding: 20px;
+}
+
+.my-selection-image-div img {
+    justify-content: center;
+    width: 35%;
+    padding: 20px, 21.5px;
+}
+
+div .my-selection-image-div {
+    display: flex;
+    background-color: #FFFFFF;
+    padding: 20px 21.5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+.linkLirePlus {
+    color: var(--secondary-color);
+    margin-top: 10px;
+}
+
+.hide {
+    display: none;
+}
