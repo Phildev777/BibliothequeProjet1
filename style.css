@@ -1,6 +1,7 @@
 
 @import "secondPart.css";
 
+@import "guillaume.css";
 
 :root {
     --primary-color: #384E77;
@@ -8,20 +9,19 @@
     --font-family: 'Noto Sans', sans-serif;
     --titles-color: #0D0630;
     --text-color: #18314F;
-    --background-color: rgba(139, 190, 178, 0.1);
-    --shadow-color: 4px 4px 20px rgba(56, 78, 119, 0.2);
+    --background-color: var(--secondary-color), 0.2;
+    --shadow-color: 0.25rem 0.25rem 1.25rem var(--primary-color), 0.2;
     --font-weight-bold: 800;
     --font-weight-regular: 400;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0 auto;
     box-sizing: border-box;
 }
 
 body {
-
     font-family: var(--font-family);
     font-weight: var(--font-weight-regular);
 }
@@ -215,6 +215,7 @@ p>span>.locationName {
 
 /*css de guillaume*/
 
+<<<<<<< HEAD
 #more2,
 #more3,
 #more1 {
@@ -261,6 +262,9 @@ p>span>.locationName {
     margin-top: 10px;
 }
 
+=======
+/*CSS-DANI*/
+>>>>>>> 314b3e9244999ec550147866eb814dd572206083
 
 
 /* --------------Formulaire------------- */
