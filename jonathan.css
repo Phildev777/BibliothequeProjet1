@@ -213,8 +213,9 @@ button:active {
 
 
 footer {
+    min-width: 375px;
     width: 100%;
-    height: 180px;
+    height: 190px;
     background-color: #384E77;
     text-align: center;
     display: flex;
@@ -229,6 +230,7 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 15px;
+    width: 100%;
 }
 
 #logoFoot {
@@ -298,11 +300,12 @@ footer {
     }
 
     #activMap {
-        width: 700px;
+        width: 1240px;
+        height: 500px;
     }
 
     #positionAdress {
-        margin-top: 50px;
+        margin-top: 70px;
         gap: none;
         margin-bottom: 20px;
     }
@@ -316,15 +319,36 @@ footer {
         width: 90%;
     }
 
-    #bookFoot {
-        align-items: flex-end;
-    }
-
     #closeButton {
         margin-top: 20px;
     }
 
+    .bookFoot {
+        width: 1240px;
+    }
+
+    #bookFoot {
+        margin-right: 0%;
+        margin-top: -70px;
+    }
+
     footer {
+        height: 140px;
+    }
+
+    .footerBox {
+
+        width: 1240px;
+        display: flex;
         flex-direction: row;
+    }
+
+    #footerText {
+        justify-content: flex-start;
+        margin-right: 440px;
+    }
+
+    #logoFoot {
+        margin-left: -140px;
     }
 }
