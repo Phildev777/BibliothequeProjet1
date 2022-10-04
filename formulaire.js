@@ -1,9 +1,19 @@
-const form = document.querySelector(".form");
-const userName = document.querySelector("#userName");
 
-
-form.onsubmit = function (event) {
-    event.preventDefault();
-    window.alert(`Merci ${userName.value} ! Votre message est bien envoyé ! Je vous promet d'y répondre au plus vite !`);
+function openForm(e) {
+    e.preventDefault();
+    document.getElementById("popupForm").style.display = "block";
+    document.querySelector(".form").style.opacity = "20%";
+    document.querySelector(".googleMap").style.display = "none";
+    document.getElementById("contactMe").style.opacity = "20%";
+    document.querySelector(".articles").style.opacity = "20%";
 };
 
+
+function closeForm() {
+
+    document.getElementById("popupForm").style.display = "none";
+    document.querySelector(".form").style.opacity = "initial";
+    document.querySelector(".googleMap").style.display = "flex";
+    document.getElementById("contactMe").style.opacity = "initial";
+    document.querySelector(".articles").style.opacity = "initial";
+};
