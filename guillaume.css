@@ -50,7 +50,6 @@
 }
 
 .my-selection-card-book {
-    display: flex;
     align-items: center;
     width: 100%;
     padding: 20px;
@@ -64,7 +63,6 @@
 }
 
 div .my-selection-image-div {
-    display: flex;
     background-color: #FFFFFF;
     padding: 20px 21.5px;
     border-radius: 10px;
@@ -99,37 +97,41 @@ div .my-selection-image-div {
 }
 
 @media screen and (min-width: 600px) {
-    .identity {
+
+    .identity,
+    .my-selection,
+    .my-selection-div {
         display: flex;
+    }
+
+    .identity,
+    .my-selection-div {
         flex-direction: row;
+    }
+
+    .identity-image-div,
+    .identity-title {
+        width: 40%;
+    }
+
+    .identity {
         width: 100%;
         padding: 80px 100px;
-        height: 100%;
+        height: fit-content;
         justify-content: space-between;
         align-items: center;
     }
 
     .identity-title {
         display: block;
-        width: 40%;
     }
 
     .identity-title h2 {
         text-align: left;
     }
 
-    .identity-image-div {
-        width: 40%;
-    }
-
     .my-selection {
-        display: flex;
         flex-direction: column;
         padding: 40px 100px 80px 100px;
-    }
-
-    .my-selection-div {
-        display: flex;
-        flex-direction: row;
     }
 }
