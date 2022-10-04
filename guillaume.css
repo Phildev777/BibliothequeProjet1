@@ -4,7 +4,7 @@
     --font-family: 'Noto Sans', sans-serif;
     --titles-color: #0D0630;
     --text-color: #18314F;
-    --background-color: rgba(139, 190, 178, 0.1);
+    --background-color: rgba(139, 190, 178, 0.2);
     --shadow-color: 4px 4px 20px rgba(56, 78, 119, 0.2);
     --font-weight-bold: 800;
     --font-weight-regular: 400;
@@ -41,7 +41,7 @@
 }
 
 .my-selection {
-    background: rgba(139, 190, 178, 0.1);
+    background-color: var(--background-color);
     width: 100%;
 }
 
@@ -50,8 +50,11 @@
 }
 
 .my-selection-card-book {
+    display: flex;
+    align-items: center;
     width: 100%;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .my-selection-image-div img {
@@ -68,14 +71,30 @@ div .my-selection-image-div {
     margin-bottom: 20px;
 }
 
-
-.linkLirePlus {
+.read-more-btn {
     color: var(--secondary-color);
     margin-top: 10px;
     cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: all, 0.35s ease;
+    display: inline-block;
 }
 
-.hide {
+.card__read-more {
+    display: block;
+    opacity: 0;
+    height: 0;
+    transition: all 0.5s ease;
+}
+
+.card__read-more--open {
+    display: inline;
+    opacity: 1;
+    height: auto;
+}
+
+.hide_dots {
     display: none;
 }
 
