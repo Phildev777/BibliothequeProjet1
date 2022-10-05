@@ -255,6 +255,7 @@ footer {
     .formulaire {
         padding-bottom: 80px;
         padding-top: 40px;
+        width: 100%;
     }
 
     .windowForm {

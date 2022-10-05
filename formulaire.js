@@ -1,3 +1,5 @@
+const form = document.querySelector('.form');
+
 
 function openForm(e) {
     e.preventDefault();
@@ -5,7 +7,9 @@ function openForm(e) {
     document.querySelector(".form").style.opacity = "20%";
     document.querySelector(".googleMap").style.display = "none";
     document.getElementById("contactMe").style.opacity = "20%";
+    document.getElementById("bookFoot").style.opacity = "20%";
     document.querySelector(".articles").style.opacity = "20%";
+    form.reset();
 };
 
 
@@ -15,5 +19,6 @@ function closeForm() {
     document.querySelector(".form").style.opacity = "initial";
     document.querySelector(".googleMap").style.display = "flex";
     document.getElementById("contactMe").style.opacity = "initial";
+    document.getElementById("bookFoot").style.opacity = "initial";
     document.querySelector(".articles").style.opacity = "initial";
 };
