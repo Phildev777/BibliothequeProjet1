@@ -17,8 +17,8 @@
 .cover-image1-3, 
 .cover-image2 {
     width: 100%;
-    background-color: var(--secondary-color);
-    padding: 1.2rem 30%;
+    background-color: var(--background-color);
+    padding: 4% 33%;
     border-radius: 0.62rem;
     margin: 1rem;    
 }
