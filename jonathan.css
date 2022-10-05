@@ -41,9 +41,11 @@ input {
     margin-bottom: 10px;
 }
 
-input:focus {
+input:focus,
+input:active {
     border: 1px solid var(--primary-color);
     outline: none;
+    background-color: var(--background-color);
 }
 
 #labelForm,
@@ -80,10 +82,13 @@ input:focus {
     margin-top: 5px;
 }
 
-#formulaireMessage:focus {
-    border: 1px solid #384E77;
+#formulaireMessage:focus,
+#formulaireMessage:active {
+    border: 1px solid var(--primary-color);
     outline: none;
+    background-color: var(--background-color);
 }
+
 
 #policyText {
     width: 295px;
