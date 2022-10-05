@@ -95,7 +95,6 @@ div .my-selection-image-div {
     height: auto;
     transition-property: opacity, height;
     transition-duration: 2s, 3s;
-
 }
 
 .hide_dots {
@@ -161,5 +160,10 @@ div .my-selection-image-div {
     .my-selection-card-book {
         min-width: auto;
         max-width: 350px;
+    }
+
+    .my-selection-title {
+        align-items: center;
+        margin-bottom: 20px;
     }
 }
