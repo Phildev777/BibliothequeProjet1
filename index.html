@@ -84,31 +84,24 @@
 
 
         </div>
-        <!-- 
-        <div class="title">
-
-            <img src=assets/project-1-background-cover-header.jpg alt="phototitre" class="phototitre" />
-
-        </div> -->
 
     </section>
-    <section>
-        <div class="identity">
-            <div class="identity-title">
-                <h2>Qui suis-je ?</h2>
+    <section class="identity">
+        <div class="identity-title">
+            <h2>Qui suis-je ?</h2>
 
-                <p>
-                    Je suis Paul Eugène Jonathan Scattolini, mais vous pouvez m’appeler tout simplement
-                    <strong>Paul</strong>.
-                    Baigné depuis mon
-                    plus jeune âge dans le monde des lettres, je réalise aujourd’hui mon rêve : transmettre mon amour de
-                    la
-                    littérature à tout ceux qui franchiront la porte de ma librairie. Un bon conseil pour un bon livre.
-                </p>
-            </div>
-            <div class="identity-image-div">
-                <img src="/assets/project-1-photo-paul.jpg" id="identity-img" alt="Paul's Picture">
-            </div>
+            <p>
+                Je suis Paul Eugène Jonathan Dani Guillaume Philippe, mais vous pouvez m’appeler tout simplement
+                <strong>Paul</strong>.
+                Baigné depuis mon
+                plus jeune âge dans le monde des lettres, je réalise aujourd’hui mon rêve : transmettre mon amour de
+                la
+                littérature à tout ceux qui franchiront la porte de ma librairie. Un bon conseil pour un bon livre.
+            </p>
+        </div>
+        <div class="identity-image-div">
+            <img src="/assets/project-1-photo-paul.jpg" id="identity-img" alt="Paul's Picture">
+        </div>
         </div>
     </section>
     <div class="iconWave">
@@ -121,7 +114,7 @@
             </div>
             <div class="my-selection-div">
                 <article class="my-selection-card-book">
-                    <div>
+                    <div class="card-holder">
                         <div class="my-selection-image-div">
                             <img src="/assets/project-1-book-cover-des-fleurs-pour-algernon.jpg"
                                 alt="couverture du livre Des fleurs pour algenon">
@@ -135,8 +128,8 @@
                         <div>
                             <p class="content">
                                 Algernon est une souris dont le traitement du Pr Nemur et du Dr Strauss vient de
-                                décupler
-                                l'intelligence. Enhardis par cette
+                                décupler l'intelligence.
+                                Enhardis par cette
                                 réussite, les
                                 savants tentent,
                                 avec l'assistance de la
@@ -151,12 +144,12 @@
                                 métamorphoser.
                             </p>
                         </div>
-                        <div onclick="readMore(this)" class="linkLirePlus">Lire plus +</div>
+                        <p class="read-more-btn">Lire plus +</p>
                     </div>
                 </article>
 
                 <article class="my-selection-card-book">
-                    <div>
+                    <div class="card-holder">
                         <div class="my-selection-image-div">
                             <img src="/assets/project-1-book-cover-fahrenheit-451.jpeg"
                                 alt="couverture du livre Farhenheit 451">
@@ -178,13 +171,13 @@
                             à rêver
                             d'un monde différent.
                         </p>
-                        <div onclick="readMore(this)" class="linkLirePlus">Lire plus +</div>
+                        <p class="read-more-btn">Lire plus +</p>
                     </div>
                 </article>
 
 
                 <article class="my-selection-card-book">
-                    <div>
+                    <div class="card-holder">
                         <div class="my-selection-image-div">
                             <img src="/assets/project-1-book-cover-la-horde-du-contrevent.jpeg"
                                 alt="couverture du livre La horde du contrevent">
@@ -211,7 +204,7 @@
                             fuit
                             devant eux comme un horizon fou.
                         </p>
-                        <div onclick="readMore(this)" class="linkLirePlus">Lire plus +</div>
+                        <p class="read-more-btn">Lire plus +</p>
                     </div>
                 </article>
             </div>
@@ -300,9 +293,9 @@
 
     <section class="formulaire">
 
-        <h2>Contactez-moi</h2>
+        <h2 id="contactMe">Contactez-moi</h2>
 
-        <form class="form">
+        <form class="form" onsubmit="openForm(event)">
 
             <fieldset class="windowForm">
 
@@ -319,30 +312,62 @@
 
                         <p>
 
-
                             <label id="labelForm" for="email">Email</label> <br> <input type="text" name="email"
-                                placeholder="john.doe@mail.com" size="30" maxlength="30" required>
+                                id="userMail" placeholder="john.doe@mail.com" size="30" maxlength="30" required>
 
+                        </p>
+
+                        <p id="labelTextareaPhone">Message</p>
+
+                    </div>
+
+                    <div>
+
+                        <p id="labelTextareaDesktop">Message</p> <br id="brMessage">
+
+                        <textarea name="formulaire-message" id="formulaireMessage"
+                            placeholder="Écris ton message ici..." maxlength="300" required></textarea>
+
+                        <p id="policyText">En cliquant sur “Envoyer” vous acceptez d'être contactés par la
+                            librairie "Le nez dans les lettres". Pour en savoir plus sur l'utilisation de vos données
+                            personnelles, merci de consulter la page concernant notre politique de confidentialité.
                         </p>
 
                     </div>
 
-                    <label id="labelForm" for="textearea">Message</label>
-
-                    <textarea name="formulaire-message" id="formulaireMessage" placeholder="Écris ton message ici..."
-                        maxlength="300" required></textarea>
-
-                    <p id="policyText">En cliquant sur “Envoyer” vous acceptez d'être contactés par la
-                        librairie "Le nez dans les lettres". Pour en savoir plus sur l'utilisation de vos données
-                        personnelles, merci de consulter la page concernant notre politique de confidentialité.</p>
-
                 </div>
 
-                <button>Envoyer</button>
+                <button id="sendButton" type="submit"><strong>Envoyez</strong></button>
 
             </fieldset>
 
         </form>
+
+        <div class="popup">
+
+            <div class="form-popup" id="popupForm">
+
+                <div action="/formulaire.js" class="pop-container">
+
+
+                    <div id="bookPopupBox">
+
+                        <img id="bookPopup" src="/assets/project-1-asset-books.svg" alt="image of books">
+
+                    </div>
+
+                    <h3>Bien reçu !</h3>
+
+                    <p>Votre message est bien arrivé jusqu'à moi ! Je vous répond au plus vite.</p>
+
+                    <button id="closeButton" type="button" onclick="closeForm()">Fermer</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
 
     </section>
 
@@ -364,12 +389,20 @@
 
     </section>
 
+    <img id="bookFoot" src="/assets/project-1-asset-books.svg" alt="image of books">
+
     <footer>
 
-        <p id="footerText">© Le nez dans les lettres 2022 </br> <a id="footerUrl" target="_blank"
-                href="/policy.html">Politique de
-                confidentialité</a> - <a id="footerUrl" target="_blank" href="/legal.html">Mentions légales</a>
-        </p>
+        <div class="footerBox">
+
+            <img src="/assets/project-1-logo-le-nez-dans-les-lettres-white.svg" alt="logo librairie" id="logoFoot">
+
+            <p id="footerText">© Le nez dans les lettres 2022 </br> <a id="footerUrl" target="_blank"
+                    href="/policy.html">Politique de
+                    confidentialité</a> - <a id="footerUrl" target="_blank" href="/legal.html">Mentions légales</a>
+            </p>
+
+        </div>
 
     </footer>
 

@@ -6,21 +6,34 @@ let contents = document.querySelectorAll(".content");
 contents.forEach(content => {
     let displayText = content.textContent.slice(0, noOfCharac);
     let moreText = content.textContent.slice(noOfCharac);
-    content.innerHTML = `${displayText}<span class="dots">...</span><span class="hide more">${moreText}</span>`;
+    content.innerHTML = `${displayText}<span class="dots">...</span><span class="card__read-more">${moreText}</span>`;
 });
-const lirePlus = "Lire plus +";
-const lireMoins = "Lire moins -";
 
-function readMore(div) {
-    let post = div.parentElement;
-    let divContent = div.textContent;
+const btn = document
+    .querySelector('.read-more-btn');
 
-    post.querySelector(".dots").classList.toggle("hide");
-    post.querySelector(".more").classList.toggle("hide");
-    if (divContent === lirePlus) {
-        div.innerHTML = lireMoins;
-    }
-    else {
-        div.innerHTML = lirePlus;
-    };
-}
+const text = document
+    .querySelector('.card__read-more');
+
+const cardHolder = document
+    .querySelector('.my-selection');
+
+cardHolder
+    .addEventListener('click', e => {
+
+        const current = e.target;
+
+        const isReadMoreBtn = current.className.includes('read-more-btn');
+
+        if (!isReadMoreBtn)
+            return;
+        const dots = current.parentNode.querySelector('.dots');
+        const currentText = current.parentNode.querySelector('.card__read-more');
+
+        currentText.classList.toggle('card__read-more--open');
+        dots.classList.toggle('hide_dots');
+
+
+        current.textContent = current.textContent.includes('Lire plus +') ? 'Lire moins -' : 'Lire plus +';
+
+    });

@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 
 @import "secondPart.css";
 
+=======
+@import "jonathan.css";
+>>>>>>> 14142c37ae869ff0f57c2196430eb2d678604a3c
 @import "guillaume.css";
 
 :root {
@@ -9,8 +13,8 @@
     --font-family: 'Noto Sans', sans-serif;
     --titles-color: #0D0630;
     --text-color: #18314F;
-    --background-color: var(--secondary-color), 0.2;
-    --shadow-color: 0.25rem 0.25rem 1.25rem var(--primary-color), 0.2;
+    --background-color: rgba(139, 190, 178, 0.2);
+    --shadow-color: 4px 4px 20px rgba(56, 78, 119, 0.2);
     --font-weight-bold: 800;
     --font-weight-regular: 400;
 }
@@ -174,6 +178,7 @@ ul {
     border-radius: 18px;
     border-color: var(--primary-color);
     border-style: solid;
+
 }
 
 .phototitre {
@@ -182,31 +187,6 @@ ul {
     margin: 0px;
 }
 
-.formLabel {
-    font-size: 0.875rem;
-    line-height: 1.375rem;
-    font-weight: var(--font-weight-bold);
-}
-
-*/ input {
-    color: var(--secondary-color), 0.5;
-    border: 0.0625 solid var(--secondary-color);
-    border-radius: 0.3125;
-    font-size: 1rem;
-    line-height: 1.625rem;
-}
-
-textarea {
-    color: var(--secondary-color), 0.5;
-    border: 0.0625 solid var(--secondary-color);
-    border-radius: 0.3125;
-}
-
-p.gdpr {
-    font-size: 0.75rem;
-    line-height: 1.125rem;
-    color: var(--text-color);
-}
 
 p>span>.locationName {
     color: var(--titles-color);
@@ -217,6 +197,7 @@ p>span>.locationName {
 
 /*CSS-DANI*/
 
+<<<<<<< HEAD
 
 /* --------------Formulaire------------- */
 
@@ -395,4 +376,50 @@ footer {
     #activMap {
         width: 700px;
     }
+=======
+.book-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#article-title {
+    width: 100%;
+}
+
+.article-title-text {
+    background-color: chartrese;
+    margin: 0 4%;
+    text-align: left;
+}
+
+.article-main2-text {
+    background-color: bluevioet;
+    margin: 2% 4% 0
+}
+
+#image-div {
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--background-color);
+    border-radius: 0.62rem;
+    margin: 2rem;
+}
+
+#cover-image {
+    width: 8rem;
+    height: 13rem;
+    text-align: center;
+    margin: 2rem;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: dargreen;
+>>>>>>> 14142c37ae869ff0f57c2196430eb2d678604a3c
 }
