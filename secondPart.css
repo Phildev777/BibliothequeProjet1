@@ -1,27 +1,155 @@
-.book-article {
+.book-articles1-3,
+.book-articles2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 1.3rem;
+    
 }
 
-.article-title {
+.article-title1,
+.article-title2,
+.article-title3 {
   width: 100%;
 }
 
 
-.cover-image {
+.cover-image1-3, 
+.cover-image2 {
     width: 100%;
-    background-color: var(--background-color);
-    padding: 1.2rem 20%;
+    background-color: var(--secondary-color);
+    padding: 1.2rem 30%;
     border-radius: 0.62rem;
     margin: 1rem;    
 }
 
-.lireplus {
+.buttonstyle1,
+.buttonstyle2,
+.buttonstyle3 {
+    border: none;
+    background-color:white;
+    color: var(--secondary-color);
+    padding: 0;
+    width: 34px;
+    height: 36px;
+}
+
+.lireplus1, 
+.lireplus2,
+.lireplus3 {
+    border: none;
+    background-color:white;
+    color: var(--secondary-color);
+    text-align: left;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    margin-top: 2%;
+}
+
+.hiddennn1 {
+    display: none;
+}
+
+.showMas1 {
+    display:inline;
+} 
+
+.lireplus2 {
     border: none;
     background-color:white;
     color: var(--secondary-color);
 }
 
-.mas {display: none;}
+
+.hiddennn2 {
+    display: none;}
+
+.showMas2 {
+    display:inline;
+}
+
+.lireplus3 {
+    border: none;
+    background-color:white;
+    color: var(--secondary-color);
+}
+
+.hiddennn3 {
+    display: none;
+}
+
+.showMas3 {
+    display:inline;
+}
+
+@media screen and (min-width: 600px) { 
+    .best-sellers {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin-left: auto;
+        
+    }
+
+    .book-articles1-3,
+    .book-articles2 {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 85%;
+        margin: 4% auto 1%;
+        align-items: flex-start;
+        gap:2%;
+    }
+
+    .book-articles2 {
+        flex-direction: row;
+    }
+
+    .cover-image1-3 {
+        padding: 3% 17%;
+        margin-right:0;
+        margin-left: 10%;
+        max-width: 50%;
+    }
+
+     
+    .cover-image2 {
+        padding: 3% 17%;
+        margin-right:10%;
+        margin-left: 0;
+        max-width: 50%;
+    }
+
+    .article-withoutimage1-3 {
+        margin: 4% auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .article-withoutimage2{
+        margin: 4% auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;}
+    
+    h3 {
+        margin: 0;
+    }
+   
+    
+    .lireplus1, 
+    .lireplus2,
+    .lireplus3,
+    .puntos1,
+    .puntos2,
+    puntos3 {
+        display: none;
+    }
+
+    .hiddennn1,
+    .hiddennn2, 
+    .hiddennn3 {
+        display: inline;
+    }
+    
+}
