@@ -250,7 +250,7 @@ footer {
 /* --------------Formulaire - GoogleMap - Popup - responsive-------------- */
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
 
     .formulaire {
         padding-bottom: 80px;
