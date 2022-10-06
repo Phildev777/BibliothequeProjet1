@@ -1,0 +1,129 @@
+.hero,
+.pathDrawingLine {
+    display: flex;
+    justify-content: center;
+}
+
+.hero {
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 37rem;
+    background-image: url("assets/project-1-background-cover-header.jpg");
+    background-position: center;
+    background-size: cover;
+    gap: 3rem;
+}
+
+video.tagline {
+    display: none;
+}
+
+div.tagline {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 10rem;
+    padding: 6rem 1.875rem;
+}
+
+.bookScroll {
+    padding: 0rem 0rem 1.25rem 0rem;
+    max-height: 5.3125rem;
+}
+
+.book {
+    width: 3.875rem;
+    height: auto;
+    filter: drop-shadow(4px 4px 20px rgba(56, 78, 119, 0.5));
+    animation: bookAnimation 2s ease-in-out infinite;
+
+}
+
+@keyframes bookAnimation {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(20%);
+    }
+
+    100% {
+        transform: translate(0%);
+        opacity: 100%;
+    }
+}
+
+.drawingLineSeparator {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0rem;
+    max-height: 2.5rem;
+}
+
+.pathDrawingLine {
+
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: none;
+    stroke: #8BBEB2;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+}
+
+.drawingLineAnimation {
+    animation: dash 2s linear forwards;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    .hero {
+        padding: 5rem;
+        max-height: 50rem;
+    }
+
+    video.tagline {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        background-image: url("assets/project-1-tagline.webm");
+    }
+
+    div.tagline {
+        display: none;
+    }
+
+    .book {
+        opacity: 0;
+        animation: bookAnimation 2s ease-in-out infinite 3.5s;
+    }
+
+    @keyframes bookAnimation {
+        0% {
+            transform: translateY(0%);
+            opacity: 100%;
+        }
+
+        50% {
+            transform: translateY(20%);
+        }
+
+        100% {
+            transform: translate(0%);
+            opacity: 100%;
+        }
+    }
+
+
+}
