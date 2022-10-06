@@ -1,0 +1,382 @@
+@media screen and (max-width:600px) {
+    #desktop {
+        display: none;
+    }
+
+    :root {
+        --primary-color: #384E77;
+        --secondary-color: #8BBEB2;
+        --font-family: 'Noto Sans', sans-serif;
+        --titles-color: #0D0630;
+        --text-color: #18314F;
+        --background-color: var(--secondary-color), 0.1;
+        --shadow-color: 0.25rem 0.25rem 1.25rem var(--primary-color), 0.2;
+        --font-weight-bold: 800;
+        --font-weight-regular: 400;
+    }
+
+    #mobile {
+        position: fixed;
+        background-attachment: fixed;
+        left: 0px;
+        top: 0px;
+    }
+
+
+    body {
+
+        font-family: var(--font-family);
+        font-weight: var(--font-weight-regular);
+
+    }
+
+    nav>a {
+
+        font-size: 20px;
+
+        line-height: 1.625;
+        color: var(--titles-color);
+    }
+
+    nav>a:hover {
+        color: var(--primary-color);
+    }
+
+    h2 {
+
+        font-size: 2.5rem;
+        line-height: 3.125;
+        font-weight: var(--font-weight-bold);
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        line-height: 2.125;
+        font-weight: var(--font-weight-bold);
+    }
+
+    h3>span {
+        font-weight: var(--font-weight-regular);
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.625;
+        color: var(--text-color);
+    }
+
+
+    /*CSS Philippe mobile first*/
+
+
+    /* Sidenav menu */
+
+
+
+
+
+    .sidenav {
+
+        height: 400px;
+        width: 400px;
+        position: fixed;
+        right: -450px;
+
+        background-color: white;
+        padding-top: 60px;
+        transition: right 0.5s ease;
+        border-radius: 13px;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-shadow: 5px 5px 15px 5px #000000;
+
+
+    }
+
+
+    /* Sidenav menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+
+        font-size: 16px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+
+
+    }
+
+    .sidenav a:hover {
+        color: #111;
+
+    }
+
+    .sidenav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+
+
+    }
+
+
+    .sidenav.active {
+        right: 60px;
+        left: 50px;
+        padding-top: 0px;
+        transition: 0.3s;
+
+    }
+
+
+    .btnContact {
+        margin-left: 35px;
+        margin-top: 50px;
+        padding: 14px 20px;
+        gap: 10px;
+        width: 145px;
+        height: 46px;
+        background-color: var(--primary-color);
+        color: white;
+        border-radius: 10px;
+        border-color: var(--primary-color);
+        border-style: solid;
+
+
+
+    }
+
+    .fa-xmark {
+
+        margin-left: 340px;
+
+
+    }
+
+
+
+    /*Header*/
+
+
+
+    .header {
+        display: flex;
+        width: 750%;
+
+
+        align-items: center;
+
+        top: 0;
+
+        background-color: white;
+    }
+
+
+
+
+    .glass {
+        display: flex;
+        justify-content: flex-end;
+        flex: 0.40;
+        color: var(--secondary-color);
+        padding-right: 25px;
+    }
+
+    .fa-bars {
+        flex: 1;
+
+
+    }
+
+
+
+    .logo {
+        flex: 0.25;
+        width: 100%;
+        height: 56px;
+        margin-left: 25px;
+        margin-top: 10px;
+
+    }
+
+    .liA {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+
+
+
+
+
+
+    }
+
+    .liText {
+        border-bottom: 4px solid var(--secondary-color);
+        border-width: 2px;
+        margin-left: 0%;
+        right: 0%;
+
+
+    }
+
+
+
+
+    .phototitre {
+
+
+        width: 150%;
+        height: 700px;
+        margin-top: 60px;
+    }
+
+}
+
+/*CSS Philippe desktop*/
+
+@media screen and (min-width:600px) {
+    :root {
+        --primary-color: #384E77;
+        --secondary-color: #8BBEB2;
+        --font-family: 'Noto Sans', sans-serif;
+        --titles-color: #0D0630;
+        --text-color: #18314F;
+        --background-color: var(--secondary-color), 0.1;
+        --shadow-color: 0.25rem 0.25rem 1.25rem var(--primary-color), 0.2;
+        --font-weight-bold: 800;
+        --font-weight-regular: 400;
+    }
+
+    body {
+
+        font-family: var(--font-family);
+        font-weight: var(--font-weight-regular);
+
+    }
+
+    #desktop {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+    }
+
+    nav>a {
+
+        font-size: 20px;
+
+        line-height: 1.625;
+        color: var(--titles-color);
+    }
+
+    nav>a:hover {
+        color: var(--primary-color);
+    }
+
+    h2 {
+
+        font-size: 2.5rem;
+        line-height: 3.125;
+        font-weight: var(--font-weight-bold);
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        line-height: 2.125;
+        font-weight: var(--font-weight-bold);
+    }
+
+    h3>span {
+        font-weight: var(--font-weight-regular);
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.625;
+        color: var(--text-color);
+    }
+
+    #mobile {
+        display: none;
+
+    }
+
+    #desktop {
+        width: 100%;
+        height: 90px;
+
+    }
+
+    .logo {
+        width: 10%;
+        padding: 20px;
+        margin-right: 150px;
+    }
+
+    ul {
+        width: 65%;
+        display: flex;
+        list-style: none;
+
+
+    }
+
+    li {
+        flex: 0.5;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+    }
+
+    .phototitre {
+        width: 100%;
+    }
+
+
+    .btnContact {
+
+
+        width: 145px;
+        height: 46px;
+        background-color: var(--primary-color);
+
+        border-radius: 10px;
+        border-color: var(--primary-color);
+        border-style: solid;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        height: 90px;
+        background-color: white;
+        top: 0;
+
+
+    }
+
+    .glass {
+        display: flex;
+        border: solid var(--secondary-color);
+        align-items: center;
+        justify-content: flex-end;
+        flex: 0.5;
+        color: var(--secondary-color);
+        border-radius: 13px;
+        padding: 10px;
+        margin: 10px 20px 10px 10px;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--titles-color);
+    }
+
+
+
+}

@@ -1,4 +1,5 @@
 
+
 @import "secondPart.css";
 @import "jonathan.css";
 @import "guillaume.css";
@@ -180,6 +181,7 @@ ul {
     border-radius: 18px;
     border-color: var(--primary-color);
     border-style: solid;
+
 
 }
 
