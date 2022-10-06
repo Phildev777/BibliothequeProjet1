@@ -141,11 +141,10 @@
 
 .logo {
     flex: 0.25;
-    width: 100%;
+    /* width: 100%; */
     height: 56px;
     margin-left: 25px;
     margin-top: 10px;
-
 }
 
 .liA {
@@ -178,24 +177,23 @@
 
     width: 150%;
     height: 700px;
-    margin-top: 60px;
+    /* margin-top: 60px; */
 }
 
 
 
-/*CSS Philippe desktop*/
+/* CSS Philippe desktop
 
 @media screen and (min-width:600px) {
 
     #mobile {
         display: none;
-
     }
 
     #desktop {
+        display: flex;
         width: 100%;
         height: 90px;
-
     }
 
     .logo {
@@ -208,8 +206,6 @@
         width: 65%;
         display: flex;
         list-style: none;
-
-
     }
 
     li {
@@ -217,7 +213,6 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-
     }
 
     .phototitre {
@@ -226,12 +221,9 @@
 
 
     .btnContact {
-
-
         width: 145px;
         height: 46px;
         background-color: var(--primary-color);
-
         border-radius: 10px;
         border-color: var(--primary-color);
         border-style: solid;
@@ -243,8 +235,6 @@
         height: 90px;
         background-color: white;
         top: 0;
-
-
     }
 
     .glass {
@@ -267,4 +257,4 @@
 
 
 
-}
+} */

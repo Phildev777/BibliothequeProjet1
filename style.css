@@ -1,10 +1,7 @@
 @import "secondPart.css";
 @import "jonathan.css";
 @import "guillaume.css";
-
-@import "secondPart.css";
 @import "philippe.css";
-
 @import "nao.css";
 
 
@@ -77,117 +74,7 @@ a>p {
 }
 
 
-
-/* header part */
-
-/* Sidenav menu */
-.sidenav {
-    height: 55%;
-    width: 360px;
-    position: fixed;
-    right: -360px;
-    background-color: white;
-    padding-top: 60px;
-    transition: right 0.5s ease;
-    border-radius: 18px;
-}
-
-/* Sidenav menu links */
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 16px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #111;
-}
-
-.sidenav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Active class */
-.sidenav.active {
-    right: 0;
-    padding-top: 0px;
-}
-
-/* Close btn */
-.sidenav .close {
-    position: relative;
-    text-align: right;
-    padding-left: 0px;
-}
-
-/* Icône burger */
-.burger-icon span {
-    display: block;
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    place-items: center;
-}
-
-.glass {
-    flex: 5;
-    display: flex;
-    color: var(--secondary-color);
-    flex-direction: row-reverse;
-}
-
-.logo {
-    flex: 5;
-    margin: 15px;
-    max-width: 144px;
-    max-height: 56px;
-}
-
-i {
-    margin: 20px;
-}
-
-.lili {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-ul {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.btnContact {
-    margin-left: 35px;
-    padding: 10px;
-    border-width: 6px;
-    background-color: var(--primary-color);
-    color: white;
-    border-radius: 18px;
-    border-color: var(--primary-color);
-    border-style: solid;
-
-
-}
-
-/* Hero banner + book animation*/
-
 p>span>.locationName {
     color: var(--titles-color);
     font-weight: var(--font-weight-bold);
 }
-
-/*css de guillaume*/

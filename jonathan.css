@@ -255,7 +255,7 @@ footer {
 /* --------------Formulaire - GoogleMap - Popup - responsive-------------- */
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
 
     .formulaire {
         padding-bottom: 80px;
@@ -355,6 +355,6 @@ footer {
     }
 
     #logoFoot {
-        margin-left: -140px;
+        margin-left: -5px;
     }
 }
