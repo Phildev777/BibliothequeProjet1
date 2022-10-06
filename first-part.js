@@ -1,57 +1,33 @@
 /* lire plus / lire Moins */
 
+let noOfCharac = 150;
+let contents = document.querySelectorAll(".content");
 
-function textReveal2() {
+contents.forEach(content => {
+    let displayText = content.textContent.slice(0, noOfCharac);
+    let moreText = content.textContent.slice(noOfCharac);
+    content.innerHTML = `${displayText}<span class="dots">...</span><span class="card__read-more">${moreText}</span>`;
+});
 
-    const dots = document.getElementById("dots2");
-    const moreText = document.getElementById("more2");
-    const btnText = document.getElementById("lirePlus2");
 
-    if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Lire plus <i class='fa-solid fa-plus'></i>";
-        moreText.style.display = "none";
 
-    } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Lire moins <i class='fa-solid fa-minus'></i>";
-        moreText.style.display = "inline";
+const cardHolder = document
+    .querySelector('.my-selection');
 
-    }
-}
-function textReveal3() {
+cardHolder
+    .addEventListener('click', e => {
 
-    const dots = document.getElementById("dots3");
-    const moreText = document.getElementById("more3");
-    const btnText = document.getElementById("lirePlus3");
+        const current = e.target;
 
-    if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Lire plus <i class='fa-solid fa-plus'></i>";
-        moreText.style.display = "none";
+        const isReadMoreBtn = current.className.includes('read-more-btn');
 
-    } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Lire moins <i class='fa-solid fa-minus'></i>";
-        moreText.style.display = "inline";
+        if (!isReadMoreBtn)
+            return;
+        const dots = current.parentNode.querySelector('.dots');
+        const currentText = current.parentNode.querySelector('.card__read-more');
 
-    }
-}
-function textReveal1() {
+        currentText.classList.toggle('card__read-more--open');
+        dots.classList.toggle('hide_dots');
 
-    const dots = document.getElementById("dots1");
-    const moreText = document.getElementById("more1");
-    const btnText = document.getElementById("lirePlus1");
-
-    if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Lire plus <i class='fa-solid fa-plus'></i>";
-        moreText.style.display = "none";
-
-    } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Lire moins <i class='fa-solid fa-minus'></i>";
-        moreText.style.display = "inline";
-
-    }
-}
+        current.textContent = current.textContent.includes('Lire plus +') ? 'Lire moins -' : 'Lire plus +';
+    });

@@ -1,0 +1,169 @@
+:root {
+    --primary-color: #384E77;
+    --secondary-color: #8BBEB2;
+    --font-family: 'Noto Sans', sans-serif;
+    --titles-color: #0D0630;
+    --text-color: #18314F;
+    --background-color: rgba(139, 190, 178, 0.2);
+    --shadow-color: 4px 4px 20px rgba(56, 78, 119, 0.2);
+    --font-weight-bold: 800;
+    --font-weight-regular: 400;
+}
+
+.identity,
+.my-selection,
+.my-selection-card-book,
+.iconWave,
+.myselection-image-div,
+.book-article {
+    display: flex;
+    flex-direction: column;
+}
+
+.identity {
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+.identity h2 {
+    margin: 20px 0px 40px 0px;
+}
+
+#identity-img {
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.iconWave {
+    align-items: center;
+    margin: 40px;
+}
+
+.my-selection {
+    background-color: var(--background-color);
+    width: 100%;
+}
+
+.my-selection h2 {
+    margin: 40px 20px;
+}
+
+.my-selection-card-book {
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.my-selection-image-div img {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    padding: 20px, 21.5px;
+}
+
+div .my-selection-image-div {
+    background-color: #FFFFFF;
+    padding: 20px 21.5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.read-more-btn {
+    color: var(--secondary-color);
+    margin-top: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition-property: opacity, height;
+    transition-duration: 2s, 3s;
+    display: inline-block;
+}
+
+.card__read-more {
+    display: block;
+    opacity: 0;
+    height: 0;
+    transition-property: opacity, height;
+    transition-duration: 0.15s, 1.5s;
+}
+
+.card__read-more--open {
+    display: inline;
+    opacity: 1;
+    height: auto;
+    transition-property: opacity, height;
+    transition-duration: 2s, 3s;
+}
+
+.hide_dots {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+
+    .identity,
+    .my-selection,
+    .my-selection-div {
+        display: flex;
+    }
+
+    .identity,
+    .my-selection-div {
+        flex-direction: row;
+    }
+
+    .identity-image-div,
+    .identity-title {
+        width: 40%;
+    }
+
+    .identity {
+        width: 100%;
+        padding: 80px 40px;
+        height: fit-content;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .identity-image-div {
+        max-width: auto;
+        min-width: 400px;
+    }
+
+    .identity-title {
+        display: block;
+        min-width: 200px;
+        max-width: auto;
+    }
+
+    .identity-title h2 {
+        text-align: left;
+    }
+
+    .my-selection {
+        flex-direction: column;
+        width: 100%;
+        padding: 40px 0px 80px 0px;
+    }
+
+    .my-selection-div {
+        width: fit-content;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .my-selection-card-book {
+        min-width: auto;
+        max-width: 350px;
+    }
+
+    .my-selection-title {
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
