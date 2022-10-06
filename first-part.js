@@ -9,11 +9,7 @@ contents.forEach(content => {
     content.innerHTML = `${displayText}<span class="dots">...</span><span class="card__read-more">${moreText}</span>`;
 });
 
-const btn = document
-    .querySelector('.read-more-btn');
 
-const text = document
-    .querySelector('.card__read-more');
 
 const cardHolder = document
     .querySelector('.my-selection');
@@ -33,7 +29,5 @@ cardHolder
         currentText.classList.toggle('card__read-more--open');
         dots.classList.toggle('hide_dots');
 
-
         current.textContent = current.textContent.includes('Lire plus +') ? 'Lire moins -' : 'Lire plus +';
-
     });
