@@ -9,10 +9,11 @@
     flex-direction: column;
     width: 100%;
     min-height: 37rem;
-    background-image: url("assets/project-1-background-cover-header.jpg");
+    background-image: url("./assets/project-1-background-cover-header.jpg");
     background-position: center;
     background-size: cover;
     gap: 3rem;
+
 }
 
 video.tagline {
@@ -60,6 +61,7 @@ div.tagline {
     justify-content: center;
     margin: 2.5rem 0rem;
     max-height: 2.5rem;
+
 }
 
 .pathDrawingLine {
@@ -86,18 +88,19 @@ div.tagline {
     }
 }
 
-
 @media screen and (min-width: 600px) {
     .hero {
         padding: 5rem;
-        max-height: 50rem;
+        min-height: 50rem;
+        gap: 10rem;
     }
 
     video.tagline {
         display: flex;
         justify-content: center;
-        width: 80%;
-        background-image: url("assets/project-1-tagline.webm");
+        width: 70%;
+
+
     }
 
     div.tagline {

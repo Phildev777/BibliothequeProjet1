@@ -150,9 +150,9 @@
     </header>
     <section class="hero">
 
-        <video class="tagline" width="100%" autoplay>
+        <video class="tagline" width="100%" autoplay muted>
 
-            <source src="project-1-tagline.webm" type="video/webm">
+            <source src="./assets/project-1-tagline.webm" type="video/webm">
 
         </video>
         <div class="tagline"><img src="assets/project-1-tagline.svg" alt="Le nez dans les lettres"></div>
@@ -198,7 +198,7 @@
 
         </div>
         <div class="identity-image-div">
-            <img src="/assets/project-1-photo-paul.jpg" id="identity-img" alt="Paul's Picture">
+            <img src="./assets/project-1-photo-paul.jpg" id="identity-img" alt="Paul's Picture">
         </div>
         </div>
     </section>
@@ -218,7 +218,7 @@
                 <article class="my-selection-card-book">
                     <div class="card-holder">
                         <div class="my-selection-image-div">
-                            <img src="/assets/project-1-book-cover-des-fleurs-pour-algernon.jpg"
+                            <img src="./assets/project-1-book-cover-des-fleurs-pour-algernon.jpg"
                                 alt="couverture du livre Des fleurs pour algenon">
                         </div>
                         <div>
@@ -254,7 +254,7 @@
                 <article class="my-selection-card-book">
                     <div class="card-holder">
                         <div class="my-selection-image-div">
-                            <img src="/assets/project-1-book-cover-fahrenheit-451.jpeg"
+                            <img src="./assets/project-1-book-cover-fahrenheit-451.jpeg"
                                 alt="couverture du livre Farhenheit 451">
                         </div>
                         <div>
@@ -285,7 +285,7 @@
                 <article class="my-selection-card-book">
                     <div class="card-holder">
                         <div class="my-selection-image-div">
-                            <img src="/assets/project-1-book-cover-la-horde-du-contrevent.jpeg"
+                            <img src="./assets/project-1-book-cover-la-horde-du-contrevent.jpeg"
                                 alt="couverture du livre La horde du contrevent">
                         </div>
                         <div>
@@ -339,10 +339,13 @@
         
             <article class="book-articles1-3">
 
-                <img class="cover-image1-3" src="/assets/project-1-book-cover-la-planete-des-singes.jpeg" alt="Planet of Apes" />
-                
-                <div class ="article-withoutimage1-3">
-                    
+                <div id="image-div">
+                    <img id="cover-image" src="./assets/project-1-book-cover-la-planete-des-singes.jpeg"
+                        alt="Planet of Apes" />
+                </div>
+
+                <div id="article-title">
+
                     <h3 class="article-title-text">La planète des singes, <span>Pierre Boulle</span></h3>
                 
                     <p>
@@ -364,10 +367,13 @@
 
             <article class="book-articles2">
 
-                <img class="cover-image2" src="/assets/project-1-book-cover-le-hobbit.jpeg" alt="Planet of Apes" />
-                
-                <div class ="article-withoutimage2">
-                
+s
+                <div id="image-div">
+                    <img id="cover-image" src="./assets/project-1-book-cover-le-hobbit.jpeg" alt="Planet of Apes" />
+                </div>
+
+                <div id="article-title">
+
                     <h3 class="article-title-text">Le Hobbit, <span> J.R.R. Tolkien</span></h3>
                 
 
@@ -389,10 +395,12 @@
 
             <article class="book-articles1-3">
 
-                <img class="cover-image1-3" src="/assets/project-1-book-cover-le-meilleur-des-mondes.jpeg" 01
-                alt="Planet of Apes" />
-                
-                <div class ="article-withoutimage1-3">
+
+                <div id="image-div">
+                    <img id="cover-image" src="./assets/project-1-book-cover-le-meilleur-des-mondes.jpeg" 01
+                        alt="Planet of Apes" />
+                </div>
+
 
                     <h3 class="article-title-text">Le meilleur des mondes, <span>Aldous Huxley</span></h3>
                     
@@ -487,7 +495,7 @@
 
                     <div id="bookPopupBox">
 
-                        <img id="bookPopup" src="/assets/project-1-asset-books.svg" alt="image of books">
+                        <img id="bookPopup" src="./assets/project-1-asset-books.svg" alt="image of books">
 
                     </div>
 
@@ -524,19 +532,17 @@
 
     </section>
 
-    <div class="bookFoot">
 
-        <img id="bookFoot" src="/assets/project-1-asset-books.jpg" alt="image of books">
+    <img id="bookFoot" src="./assets/project-1-asset-books.svg" alt="image of books">
 
-    </div>
 
     <footer>
 
         <div class="footerBox">
 
-            <p>
-                <img src="/assets/project-1-logo-le-nez-dans-les-lettres-white.svg" alt="logo librairie" id="logoFoot">
-            </p>
+
+            <img src="./assets/project-1-logo-le-nez-dans-les-lettres-white.svg" alt="logo librairie" id="logoFoot">
+
 
             <p id="footerText"> © Le nez dans les lettres 2022 </br> <a id="footerUrl" target="_blank"
                     href="/policy.html"> Politique de
