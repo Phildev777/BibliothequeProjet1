@@ -1,3 +1,5 @@
+
+@import "secondPart.css";
 @import "jonathan.css";
 @import "guillaume.css";
 
@@ -62,7 +64,7 @@ h3 {
 h3>span {
     display: block;
     font-weight: var(--font-weight-regular);
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 p {
@@ -74,6 +76,8 @@ p {
 a>p {
     color: var(--secondary-color);
 }
+
+
 
 /* header part */
 
@@ -188,50 +192,3 @@ p>span>.locationName {
 
 /*css de guillaume*/
 
-/*CSS-DANI*/
-
-.book-article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#article-title {
-    width: 100%;
-}
-
-.article-title-text {
-    background-color: chartrese;
-    margin: 0 4%;
-    text-align: left;
-}
-
-.article-main2-text {
-    background-color: bluevioet;
-    margin: 2% 4% 0
-}
-
-#image-div {
-    width: 92%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    background-color: var(--background-color);
-    border-radius: 0.62rem;
-    margin: 2rem;
-}
-
-#cover-image {
-    width: 8rem;
-    height: 13rem;
-    text-align: center;
-    margin: 2rem;
-}
-
-.articles {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    background-color: dargreen;
-}
