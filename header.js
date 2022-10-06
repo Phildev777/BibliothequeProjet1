@@ -13,4 +13,5 @@ function openNav() {
 /* Set the width of the side navigation to 0 */
 function closeNav() {
     sidenav.classList.remove("active");
+
 }

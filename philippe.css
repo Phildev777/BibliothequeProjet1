@@ -7,6 +7,7 @@
     background-attachment: fixed;
     left: 0px;
     top: 0px;
+    width: 100%;
 }
 
 
@@ -15,68 +16,70 @@
 
 /*CSS Philippe mobile first*/
 
+.headerMobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 0;
+    background-color: white;
+    min-width: 370px;
+    max-width: 600px;
+    height: 80px;
+    width: 100%;
+}
 
-/* Sidenav menu */
+.logoMobile {
+    width: 110px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
 
-
-
-
+/* -----------Sidenav / Burger menu------------- */
 
 .sidenav {
 
-    height: 400px;
-    width: 400px;
+    height: 375px;
+    width: 335px;
     position: fixed;
-    right: -450px;
-
     background-color: white;
-    padding-top: 60px;
     transition: right 0.5s ease;
     border-radius: 13px;
     padding-left: 20px;
     padding-right: 20px;
     box-shadow: 5px 5px 15px 5px #000000;
-
-
+    top: 10%;
 }
 
+.sidenav.active {
+    /* bouton burger ouvert */
+    right: 60px;
+    left: 20px;
+    padding-top: 0px;
+    transition: 0.3s;
+}
 
-/* Sidenav menu links */
+.fa-xmark {
+    margin-right: 0%;
+}
+
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-
     font-size: 16px;
     color: #818181;
     display: block;
     transition: 0.3s;
-
-
 }
 
 .sidenav a:hover {
     color: #111;
-
 }
 
 .sidenav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-
-
-
 }
-
-
-.sidenav.active {
-    right: 60px;
-    left: 50px;
-    padding-top: 0px;
-    transition: 0.3s;
-
-}
-
 
 .btnContact {
     margin-left: 35px;
@@ -90,35 +93,11 @@
     border-radius: 10px;
     border-color: var(--primary-color);
     border-style: solid;
-
-
-
-}
-
-.fa-xmark {
-
-    margin-left: 340px;
-
-
 }
 
 
 
-/*Header*/
 
-
-
-.header {
-    display: flex;
-    width: 750%;
-
-
-    align-items: center;
-
-    top: 0;
-
-    background-color: white;
-}
 
 
 
@@ -134,14 +113,10 @@
 .fa-bars {
     flex: 1;
 
-
 }
-
-
 
 .logo {
     flex: 0.25;
-    /* width: 100%; */
     height: 56px;
     margin-left: 25px;
     margin-top: 10px;
@@ -151,13 +126,6 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-
-
-
-
-
-
-
 }
 
 .liText {
@@ -182,7 +150,7 @@
 
 
 
-/* CSS Philippe desktop
+/* CSS Philippe desktop */
 
 @media screen and (min-width:600px) {
 
@@ -219,7 +187,6 @@
         width: 100%;
     }
 
-
     .btnContact {
         width: 145px;
         height: 46px;
@@ -232,9 +199,11 @@
     .header {
         display: flex;
         justify-content: center;
+        align-items: center;
         height: 90px;
         background-color: white;
         top: 0;
+        width: 100%;
     }
 
     .glass {
@@ -247,6 +216,8 @@
         border-radius: 13px;
         padding: 10px;
         margin: 10px 20px 10px 10px;
+        width: 145px;
+        height: 46px;
 
     }
 
@@ -257,4 +228,4 @@
 
 
 
-} */
+}
