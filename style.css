@@ -1,7 +1,11 @@
 @import "jonathan.css";
 @import "guillaume.css";
+
 @import "secondPart.css";
 @import "philippe.css";
+
+@import "nao.css";
+
 
 :root {
     --primary-color: #384E77;
@@ -175,12 +179,7 @@ ul {
 
 }
 
-.phototitre {
-    width: 375px;
-    height: 658px;
-    margin: 0px;
-}
-
+/* Hero banner + book animation*/
 
 p>span>.locationName {
     color: var(--titles-color);

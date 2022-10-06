@@ -4,7 +4,7 @@
     --font-family: 'Noto Sans', sans-serif;
     --titles-color: #0D0630;
     --text-color: #18314F;
-    --background-color: rgba(139, 190, 178, 0.1);
+    --background-color: rgba(139, 190, 178, 0.2);
     --shadow-color: 4px 4px 20px rgba(56, 78, 119, 0.2);
     --font-weight-bold: 800;
     --font-weight-regular: 400;
@@ -41,7 +41,7 @@
 }
 
 .my-selection {
-    background: rgba(139, 190, 178, 0.1);
+    background-color: var(--background-color);
     width: 100%;
 }
 
@@ -50,67 +50,89 @@
 }
 
 .my-selection-card-book {
+    align-items: center;
     width: 100%;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .my-selection-image-div img {
+    display: flex;
     justify-content: center;
     width: 35%;
     padding: 20px, 21.5px;
 }
 
 div .my-selection-image-div {
-    display: flex;
     background-color: #FFFFFF;
     padding: 20px 21.5px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
-
-.linkLirePlus {
+.read-more-btn {
     color: var(--secondary-color);
     margin-top: 10px;
     cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: all, 0.35s ease;
+    display: inline-block;
 }
 
-.hide {
+.card__read-more {
+    display: block;
+    opacity: 0;
+    height: 0;
+    transition: all 0.5s ease;
+}
+
+.card__read-more--open {
+    display: inline;
+    opacity: 1;
+    height: auto;
+}
+
+.hide_dots {
     display: none;
 }
 
 @media screen and (min-width: 600px) {
-    .identity {
+
+    .identity,
+    .my-selection,
+    .my-selection-div {
         display: flex;
+    }
+
+    .identity,
+    .my-selection-div {
         flex-direction: row;
+    }
+
+    .identity-image-div,
+    .identity-title {
+        width: 40%;
+    }
+
+    .identity {
         width: 100%;
         padding: 80px 100px;
-        height: 100%;
+        height: fit-content;
         justify-content: space-between;
         align-items: center;
     }
 
     .identity-title {
         display: block;
-        width: 40%;
     }
 
     .identity-title h2 {
         text-align: left;
     }
 
-    .identity-image-div {
-        width: 40%;
-    }
-
     .my-selection {
-        display: flex;
         flex-direction: column;
         padding: 40px 100px 80px 100px;
-    }
-
-    .my-selection-div {
-        display: flex;
-        flex-direction: row;
     }
 }
