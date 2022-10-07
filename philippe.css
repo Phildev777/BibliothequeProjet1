@@ -133,21 +133,13 @@
     border-width: 2px;
     margin-left: 0%;
     right: 0%;
-
-
 }
 
-
-
-
 .phototitre {
-
-
     width: 150%;
     height: 700px;
     /* margin-top: 60px; */
 }
-
 
 
 /* CSS Philippe desktop */
@@ -164,11 +156,7 @@
         height: 90px;
     }
 
-    .logo {
-        width: 10%;
-        padding: 20px;
-        margin-right: 150px;
-    }
+
 
     ul {
         width: 65%;
@@ -188,43 +176,59 @@
     }
 
     .btnContact {
-        width: 145px;
+        width: 155px;
         height: 46px;
         background-color: var(--primary-color);
         border-radius: 10px;
         border-color: var(--primary-color);
         border-style: solid;
+        margin: auto;
     }
 
     .header {
         display: flex;
         justify-content: center;
+        flex-direction: row;
         align-items: center;
+        justify-content: center;
         height: 90px;
         background-color: white;
         top: 0;
         width: 100%;
+        gap: 15px;
     }
 
     .glass {
         display: flex;
         border: solid var(--secondary-color);
         align-items: center;
-        justify-content: flex-end;
         flex: 0.5;
         color: var(--secondary-color);
         border-radius: 13px;
-        padding: 10px;
-        margin: 10px 20px 10px 10px;
-        width: 145px;
+        margin: auto;
+        min-width: 155px;
+        max-width: 155px;
         height: 46px;
+    }
 
+    #loupe {
+        margin-right: 0%;
     }
 
     a {
         text-decoration: none;
         color: var(--titles-color);
     }
+
+    .liA {
+        margin: auto;
+    }
+
+    #Calque_1 {
+        height: 56px;
+        width: 144px;
+    }
+
 
 
 

@@ -334,7 +334,7 @@ footer {
     }
 
     #bookFoot {
-        margin-right: 0%;
+        margin-right: 14%;
         margin-top: -70px;
     }
 
@@ -355,6 +355,6 @@ footer {
     }
 
     #logoFoot {
-        margin-left: -5px;
+        margin-left: -120%;
     }
 }

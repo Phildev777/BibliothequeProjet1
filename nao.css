@@ -8,6 +8,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
+    min-width: 370px;
     min-height: 37rem;
     background-image: url("./assets/project-1-background-cover-header.jpg");
     background-position: center;
