@@ -1,17 +1,29 @@
 var sidenav = document.getElementById("mySidenav");
 var openBtn = document.getElementById("openBtn");
 var closeBtn = document.getElementById("closeBtn");
+var close = document.getElementById("close");
+var close1 = document.getElementById("close1");
+var close2 = document.getElementById("close2");
 
-openBtn.onclick = openNav;
-closeBtn.onclick = closeNav;
 
-/* Set the width of the side navigation to 250px */
 function openNav() {
     sidenav.classList.add("active");
 }
 
-/* Set the width of the side navigation to 0 */
+
 function closeNav() {
     sidenav.classList.remove("active");
-
 }
+
+
+openBtn.onclick = openNav;
+closeBtn.onclick = closeNav;
+close.onclick = closeNav;
+close1.onclick = closeNav;
+close2.onclick = closeNav;
+
+
+
+
+
+

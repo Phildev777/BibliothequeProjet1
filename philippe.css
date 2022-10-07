@@ -8,6 +8,7 @@
     left: 0px;
     top: 0px;
     width: 100%;
+    z-index: 100;
 }
 
 
@@ -39,27 +40,31 @@
 .sidenav {
 
     height: 375px;
-    width: 335px;
+    width: 300px;
     position: fixed;
     background-color: white;
     transition: right 0.5s ease;
     border-radius: 13px;
     padding-left: 20px;
     padding-right: 20px;
-    box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: var(--shadow-color);
     top: 10%;
+    right: -450px;
 }
 
 .sidenav.active {
     /* bouton burger ouvert */
-    right: 60px;
-    left: 20px;
+    right: 0;
+    left: -5px;
     padding-top: 0px;
     transition: 0.3s;
 }
 
 .fa-xmark {
+    display: flex;
+    justify-content: flex-end;
     margin-right: 0%;
+    padding-top: 10px;
 }
 
 .sidenav a {
@@ -102,12 +107,12 @@
 
 
 
+
+
 .glass {
-    display: flex;
-    justify-content: flex-end;
-    flex: 0.40;
+    padding-left: 180px;
+
     color: var(--secondary-color);
-    padding-right: 25px;
 }
 
 .fa-bars {
@@ -126,6 +131,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    padding-left: 20px;
 }
 
 .liText {
@@ -133,6 +139,7 @@
     border-width: 2px;
     margin-left: 0%;
     right: 0%;
+
 }
 
 .phototitre {
@@ -154,13 +161,16 @@
         display: flex;
         width: 100%;
         height: 90px;
+
+
     }
 
 
 
     ul {
-        width: 65%;
+
         display: flex;
+        gap: 2.5rem;
         list-style: none;
     }
 
@@ -196,6 +206,8 @@
         top: 0;
         width: 100%;
         gap: 15px;
+        position: fixed;
+        z-index: 100;
     }
 
     .glass {
@@ -209,15 +221,16 @@
         min-width: 155px;
         max-width: 155px;
         height: 46px;
+        justify-content: center;
+        padding-right: 20px;
     }
 
-    #loupe {
-        margin-right: 0%;
-    }
+
 
     a {
         text-decoration: none;
         color: var(--titles-color);
+        width: 120%;
     }
 
     .liA {
